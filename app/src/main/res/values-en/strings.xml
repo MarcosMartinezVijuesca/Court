@@ -27,6 +27,7 @@
     <string name="nav_videos">Videos</string>
     <string name="nav_fitness">Fitness</string>
     <string name="nav_favoritos">Favorites</string>
+    <string name="fitness_todos">All</string>
 
     <!-- Drills screen -->
     <string name="ejercicios_titulo">Drills</string>
