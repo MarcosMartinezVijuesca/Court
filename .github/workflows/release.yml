@@ -1,0 +1,61 @@
+# ── Release: genera APK y publica release al hacer tag vX.X.X ─
+name: Release — Generar APK
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  release:
+    name: Build APK y publicar release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Cache de Gradle
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
+
+      - name: Permisos Gradle wrapper
+        run: chmod +x ./gradlew
+
+      - name: Compilar APK debug
+        run: ./gradlew assembleDebug --no-daemon
+
+      - name: Renombrar APK con versión
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/}
+          mv app/build/outputs/apk/debug/app-debug.apk \
+             app/build/outputs/apk/debug/court-${VERSION}.apk
+
+      - name: Publicar Release en GitHub
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Court ${{ github.ref_name }}
+          body: |
+            ## Court ${{ github.ref_name }}
+
+            ### Instalación
+            Descarga el APK adjunto e instálalo en tu dispositivo Android (API 24+).
+            > Activa "Orígenes desconocidos" en los ajustes si es necesario.
+
+            ### Cambios
+            Ver [CHANGELOG](https://github.com/${{ github.repository }}/wiki/Changelog).
+          files: app/build/outputs/apk/debug/court-*.apk
+          draft: false
+          prerelease: ${{ contains(github.ref_name, '-') }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
