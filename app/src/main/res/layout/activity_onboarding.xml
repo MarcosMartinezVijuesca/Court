@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface"
+    android:padding="24dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/onboarding_titulo"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:id="@+id/tv_subtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/onboarding_subtitulo"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="14sp"
+        android:alpha="0.7" />
+
+    <!-- Lista de roles -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_roles"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp" />
+
+    <!-- Botón Empezar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_empezar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/onboarding_boton"
+        android:textSize="16sp"
+        android:enabled="false"
+        app:backgroundTint="?attr/colorPrimary"
+        xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+</LinearLayout>
