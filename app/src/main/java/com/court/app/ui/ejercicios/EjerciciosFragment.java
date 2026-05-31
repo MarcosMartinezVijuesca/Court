@@ -48,7 +48,10 @@ public class EjerciciosFragment extends Fragment {
         // Configurar RecyclerView
         RecyclerView rvEjercicios = view.findViewById(R.id.rv_ejercicios);
         adapter = new EjercicioAdapter(ejercicio -> {
-            // Navegar al detalle — lo implementamos en el issue #10
+            Bundle args = new Bundle();
+            args.putInt(DetalleEjercicioFragment.ARG_ID_EJERCICIO, ejercicio.getIdEjercicio());
+            androidx.navigation.Navigation.findNavController(requireView())
+                    .navigate(R.id.action_ejercicios_to_detalle, args);
         });
         rvEjercicios.setLayoutManager(new LinearLayoutManager(requireContext()));
         rvEjercicios.setAdapter(adapter);

@@ -19,4 +19,24 @@
         android:name="com.court.app.ui.fitness.FitnessFragment"
         android:label="@string/nav_fitness" />
 
+    <fragment
+        android:id="@+id/detalleEjercicioFragment"
+        android:name="com.court.app.ui.ejercicios.DetalleEjercicioFragment"
+        android:label="@string/ejercicios_titulo">
+        <argument
+            android:name="id_ejercicio"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/ejerciciosFragment"
+        android:name="com.court.app.ui.ejercicios.EjerciciosFragment"
+        android:label="@string/nav_ejercicios">
+        <action
+            android:id="@+id/action_ejercicios_to_detalle"
+            app:destination="@id/detalleEjercicioFragment" />
+    </fragment>
+
+
+
 </navigation>
