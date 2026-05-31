@@ -1,3 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- App -->
     <string name="app_name">Court</string>
+
+    <!-- Onboarding — selección de rol -->
+    <string name="onboarding_titulo">¿Cuál es tu posición?</string>
+    <string name="onboarding_subtitulo">Selecciona tu rol en la cancha para personalizar tu entrenamiento</string>
+    <string name="onboarding_boton">Empezar</string>
+
+    <!-- Roles -->
+    <string name="rol_base">Base</string>
+    <string name="rol_escolta">Escolta</string>
+    <string name="rol_alero">Alero</string>
+    <string name="rol_ala_pivot">Ala-Pívot</string>
+    <string name="rol_pivot">Pívot</string>
+
+    <!-- Descripciones de roles -->
+    <string name="desc_base">Organizador del juego. Manejo, visión y velocidad.</string>
+    <string name="desc_escolta">Anotador exterior. Tiro y penetración.</string>
+    <string name="desc_alero">Versátil. Tiro, rebote y defensa perimetral.</string>
+    <string name="desc_ala_pivot">Juego interior y exterior. Fuerza y tiro medio.</string>
+    <string name="desc_pivot">Dominio bajo el aro. Posteo, rebote y defensa interior.</string>
+
+    <!-- Navegación -->
+    <string name="nav_ejercicios">Ejercicios</string>
+    <string name="nav_videos">Vídeos</string>
+    <string name="nav_fitness">Fitness</string>
+    <string name="nav_favoritos">Favoritos</string>
+
+    <!-- Pantalla ejercicios -->
+    <string name="ejercicios_titulo">Ejercicios</string>
+    <string name="ejercicios_basicos">Ejercicios básicos</string>
+    <string name="ejercicios_avanzados">Ejercicios avanzados</string>
+    <string name="ejercicio_nivel_basico">Básico</string>
+    <string name="ejercicio_nivel_avanzado">Avanzado</string>
+    <string name="ejercicio_ver_video">Ver vídeo</string>
+    <string name="ejercicio_sin_video">Sin vídeo disponible</string>
+
+    <!-- Pantalla vídeos -->
+    <string name="videos_titulo">Vídeos técnicos</string>
+    <string name="videos_vacio">No hay vídeos disponibles para este rol</string>
+
+    <!-- Pantalla fitness -->
+    <string name="fitness_titulo">Entrenamiento físico</string>
+    <string name="fitness_categoria_fuerza">Fuerza</string>
+    <string name="fitness_categoria_salto">Salto</string>
+    <string name="fitness_categoria_resistencia">Resistencia</string>
+
+    <!-- Favoritos -->
+    <string name="favoritos_titulo">Mis favoritos</string>
+    <string name="favoritos_vacio">Aún no tienes ejercicios favoritos</string>
+    <string name="favoritos_añadir">Añadir a favoritos</string>
+    <string name="favoritos_eliminar">Eliminar de favoritos</string>
+
+    <!-- Cambiar rol -->
+    <string name="cambiar_rol">Cambiar rol</string>
+    <string name="cambiar_rol_confirmacion">¿Quieres cambiar tu posición en la cancha?</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cancelar">Cancelar</string>
+
+    <!-- Errores y estados -->
+    <string name="error_generico">Ha ocurrido un error. Inténtalo de nuevo.</string>
+    <string name="cargando">Cargando…</string>
+    <string name="lista_vacia">No hay contenido disponible</string>
 </resources>
