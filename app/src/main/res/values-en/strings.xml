@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Court</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_titulo">What\'s your position?</string>
+    <string name="onboarding_subtitulo">Select your role on the court to personalize your training</string>
+    <string name="onboarding_boton">Get started</string>
+
+    <!-- Roles -->
+    <string name="rol_base">Point Guard</string>
+    <string name="rol_escolta">Shooting Guard</string>
+    <string name="rol_alero">Small Forward</string>
+    <string name="rol_ala_pivot">Power Forward</string>
+    <string name="rol_pivot">Center</string>
+
+    <!-- Role descriptions -->
+    <string name="desc_base">Team organizer. Ball handling, vision and speed.</string>
+    <string name="desc_escolta">Outside scorer. Shooting and driving to the basket.</string>
+    <string name="desc_alero">Versatile player. Shooting, rebounding and perimeter defense.</string>
+    <string name="desc_ala_pivot">Inside and outside game. Strength and mid-range shooting.</string>
+    <string name="desc_pivot">Dominates under the rim. Post play, rebounding and interior defense.</string>
+
+    <!-- Navigation -->
+    <string name="nav_ejercicios">Drills</string>
+    <string name="nav_videos">Videos</string>
+    <string name="nav_fitness">Fitness</string>
+    <string name="nav_favoritos">Favorites</string>
+
+    <!-- Drills screen -->
+    <string name="ejercicios_titulo">Drills</string>
+    <string name="ejercicios_basicos">Basic drills</string>
+    <string name="ejercicios_avanzados">Advanced drills</string>
+    <string name="ejercicio_nivel_basico">Basic</string>
+    <string name="ejercicio_nivel_avanzado">Advanced</string>
+    <string name="ejercicio_ver_video">Watch video</string>
+    <string name="ejercicio_sin_video">No video available</string>
+
+    <!-- Videos screen -->
+    <string name="videos_titulo">Technical videos</string>
+    <string name="videos_vacio">No videos available for this role</string>
+
+    <!-- Fitness screen -->
+    <string name="fitness_titulo">Physical training</string>
+    <string name="fitness_categoria_fuerza">Strength</string>
+    <string name="fitness_categoria_salto">Jumping</string>
+    <string name="fitness_categoria_resistencia">Endurance</string>
+
+    <!-- Favorites -->
+    <string name="favoritos_titulo">My favorites</string>
+    <string name="favoritos_vacio">You have no favorite drills yet</string>
+    <string name="favoritos_añadir">Add to favorites</string>
+    <string name="favoritos_eliminar">Remove from favorites</string>
+
+    <!-- Change role -->
+    <string name="cambiar_rol">Change role</string>
+    <string name="cambiar_rol_confirmacion">Do you want to change your position on the court?</string>
+    <string name="confirmar">Confirm</string>
+    <string name="cancelar">Cancel</string>
+
+    <!-- Errors and states -->
+    <string name="error_generico">An error occurred. Please try again.</string>
+    <string name="cargando">Loading…</string>
+    <string name="lista_vacia">No content available</string>
+</resources>
