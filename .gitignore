@@ -13,3 +13,20 @@
 .externalNativeBuild
 .cxx
 local.properties
+# APKs y archivos de build
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Keystore (NUNCA subir al repo)
+*.jks
+*.keystore
+release-key.properties
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
