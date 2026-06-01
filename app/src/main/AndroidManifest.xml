@@ -13,6 +13,7 @@
         android:theme="@style/Theme.Court">
         <activity
             android:name=".ui.roles.OnboardingActivity"
+            android:theme="@style/Theme.Court"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

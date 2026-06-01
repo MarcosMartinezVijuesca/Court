@@ -170,15 +170,15 @@ public abstract class CourtDatabase extends RoomDatabase {
                 videoDao.insertarVideos(
                         new Video(null, c.getString(R.string.vid_salto_titulo),
                                 "https://www.youtube.com/watch?v=WA564xCGgnc&t=93s",
-                                "salto", 480, null),
+                                "salto", 941, null),
 
                         new Video(null, c.getString(R.string.vid_fuerza_titulo),
                                 "https://youtu.be/t0xEqm-0CTw?t=47",
-                                "fuerza", 360, null),
+                                "fuerza", 285, null),
 
                         new Video(null, c.getString(R.string.vid_resistencia_titulo),
                                 "https://youtu.be/b7rr3IfRcyo?t=24",
-                                "resistencia", 420, null)
+                                "resistencia", 220 , null)
                 );
             });
         }

@@ -46,7 +46,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
         Video video = videos.get(position);
 
         holder.tvTitulo.setText(video.getTitulo());
-        holder.tvCategoria.setText(video.getCategoria().toUpperCase());
+        holder.tvCategoria.setText(obtenerCategoriaLocalizada(holder.itemView.getContext(), video.getCategoria()));
 
         // Formatear duración
         int min = video.getDuracionSeg() / 60;
@@ -71,6 +71,14 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
             tvTitulo    = itemView.findViewById(R.id.tv_titulo_video);
             tvCategoria = itemView.findViewById(R.id.tv_categoria_video);
             tvDuracion  = itemView.findViewById(R.id.tv_duracion_video);
+        }
+    }
+    private String obtenerCategoriaLocalizada(android.content.Context context, String categoria) {
+        switch (categoria) {
+            case "salto":       return context.getString(R.string.fitness_categoria_salto);
+            case "fuerza":      return context.getString(R.string.fitness_categoria_fuerza);
+            case "resistencia": return context.getString(R.string.fitness_categoria_resistencia);
+            default:            return categoria.toUpperCase();
         }
     }
 }
