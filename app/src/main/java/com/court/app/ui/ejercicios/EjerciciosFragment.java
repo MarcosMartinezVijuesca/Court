@@ -68,7 +68,7 @@ public class EjerciciosFragment extends Fragment {
         // Cargar ejercicios del rol
         ejercicioViewModel = new ViewModelProvider(this).get(EjercicioViewModel.class);
         ejercicioViewModel.setRol(idRol);
-        ejercicioViewModel.ejerciciosPorRol.observe(getViewLifecycleOwner(), ejercicios -> {
+        ejercicioViewModel.obtenerSinVideoPorRol(idRol).observe(getViewLifecycleOwner(), ejercicios -> {
             if (ejercicios != null) adapter.setEjercicios(ejercicios);
         });
 

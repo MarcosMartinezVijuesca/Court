@@ -30,7 +30,6 @@
                 android:layout_gravity="center"
                 android:src="@drawable/ic_nav_videos"
                 android:contentDescription="@null" />
-
         </com.google.android.material.card.MaterialCardView>
 
         <!-- Info -->

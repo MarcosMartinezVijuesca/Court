@@ -16,7 +16,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.court.app.R;
+import com.court.app.ui.ejercicios.DetalleEjercicioFragment;
+import com.court.app.ui.ejercicios.EjercicioAdapter;
 import com.court.app.ui.roles.OnboardingActivity;
+import com.court.app.viewmodel.EjercicioViewModel;
 import com.court.app.viewmodel.VideoViewModel;
 
 import static android.content.Context.MODE_PRIVATE;
@@ -43,20 +46,21 @@ public class VideosFragment extends Fragment {
                 .getSharedPreferences(OnboardingActivity.PREFS_NAME, MODE_PRIVATE);
         int idRol = prefs.getInt(OnboardingActivity.KEY_ID_ROL, 1);
 
-        // Configurar RecyclerView
         RecyclerView rvVideos = view.findViewById(R.id.rv_videos);
-        adapter = new VideoAdapter(video -> {
-            // Abrir YouTube con la URL del vídeo
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(video.getYoutubeUrl()));
-            startActivity(intent);
+
+        // Reutilizamos EjercicioAdapter ya que ahora Videos muestra ejercicios con URL
+        EjercicioAdapter adapter = new EjercicioAdapter(ejercicio -> {
+            Bundle args = new Bundle();
+            args.putInt(DetalleEjercicioFragment.ARG_ID_EJERCICIO, ejercicio.getIdEjercicio());
+            androidx.navigation.Navigation.findNavController(requireView())
+                    .navigate(R.id.action_videos_to_detalle, args);
         });
         rvVideos.setLayoutManager(new LinearLayoutManager(requireContext()));
         rvVideos.setAdapter(adapter);
 
-        // Cargar vídeos del rol activo
-        viewModel = new ViewModelProvider(this).get(VideoViewModel.class);
-        viewModel.obtenerPorRol(idRol).observe(getViewLifecycleOwner(), videos -> {
-            if (videos != null) adapter.setVideos(videos);
+        EjercicioViewModel viewModel = new ViewModelProvider(this).get(EjercicioViewModel.class);
+        viewModel.obtenerConVideoPorRol(idRol).observe(getViewLifecycleOwner(), ejercicios -> {
+            if (ejercicios != null) adapter.setEjercicios(ejercicios);
         });
     }
 }

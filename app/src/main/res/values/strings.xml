@@ -42,6 +42,63 @@
     <string name="videos_titulo">Vídeos técnicos</string>
     <string name="videos_vacio">No hay vídeos disponibles para este rol</string>
 
+    <!-- Ejercicios básicos -->
+    <string name="ej_bote_titulo">Bote con ambas manos</string>
+    <string name="ej_bote_desc">Practica el bote alternando la mano derecha e izquierda. Mantén la cabeza levantada y los ojos al frente. Realiza 3 series de 30 segundos por mano.</string>
+    <string name="ej_tiro_titulo">Técnica de tiro</string>
+    <string name="ej_tiro_desc">Coloca los pies a la anchura de los hombros. Flexiona las rodillas, alinea el codo con la canasta y suelta el balón con un movimiento suave de muñeca. Realiza 20 repeticiones.</string>
+    <string name="ej_defensa_titulo">Defensa individual</string>
+    <string name="ej_defensa_desc">Adopta la posición defensiva con rodillas flexionadas, espalda recta y brazos extendidos. Desplázate lateralmente siguiendo al atacante sin cruzar los pies.</string>
+    <string name="ej_pases_titulo">Pases de pecho</string>
+    <string name="ej_pases_desc">Agarra el balón con ambas manos a la altura del pecho. Extiende los brazos hacia el compañero y suelta el balón con un giro de muñecas. Realiza 3 series de 15 repeticiones.</string>
+
+    <!-- Base -->
+    <string name="ej_base_mov_titulo">Movimientos de base</string>
+    <string name="ej_base_mov_desc">Vídeo de referencia con los movimientos fundamentales del base: manejo de balón en movimiento, cambios de dirección, visión de juego y toma de decisiones rápidas en pista.</string>
+    <string name="ej_base_pickroll_titulo">Pick and Roll</string>
+    <string name="ej_base_pickroll_desc">Coordínate con el pívot para usar el bloqueo directo. Tras el bloqueo decide si penetrar, tirar o pasar al pívot según la reacción de la defensa.</string>
+    <string name="ej_base_ritmo_titulo">Cambio de ritmo</string>
+    <string name="ej_base_ritmo_desc">Alterna entre bote rápido y lento para desequilibrar al defensor. Usa el cambio de velocidad en el momento en que el defensor baje la guardia.</string>
+
+    <!-- Escolta -->
+    <string name="ej_escolta_bote_titulo">Bote en movimiento y movimientos de escolta</string>
+    <string name="ej_escolta_bote_desc">Ejercicios de bote en movimiento combinados con los gestos técnicos propios del escolta: cambios de mano, entre piernas, detrás de la espalda y finalizaciones al aro.</string>
+    <string name="ej_escolta_catch_titulo">Catch and Shoot</string>
+    <string name="ej_escolta_catch_desc">Prepara el tiro antes de recibir el balón. En cuanto lo recibas, sin botes adicionales, lanza directamente. El objetivo es reducir el tiempo de lanzamiento.</string>
+    <string name="ej_escolta_corte_titulo">Corte sin balón</string>
+    <string name="ej_escolta_corte_desc">Finge ir en una dirección y corta bruscamente hacia el aro o hacia el espacio libre. El objetivo es desmarcarte del defensor para recibir el pase.</string>
+    <string name="ej_escolta_floater_titulo">Floater</string>
+    <string name="ej_escolta_floater_desc">En penetración, lanza un tiro suave por encima del pivote interior cuando no puedas llegar al aro con una bandeja normal. Practica desde ambos lados.</string>
+
+    <!-- Alero -->
+    <string name="ej_alero_mov_titulo">Ejercicios generales para alero</string>
+    <string name="ej_alero_mov_desc">Vídeo de referencia con los movimientos clave del alero: tiro de media distancia, movimientos sin balón, cortes al aro, rebote ofensivo y defensa perimetral.</string>
+    <string name="ej_alero_rebote_titulo">Rebote ofensivo</string>
+    <string name="ej_alero_rebote_desc">Anticipa la trayectoria del tiro y posiciónate entre el defensor y el aro. Salta con los dos pies y captura el balón en el punto más alto.</string>
+    <string name="ej_alero_defensa_titulo">Defensa perimetral</string>
+    <string name="ej_alero_defensa_desc">Trabaja el posicionamiento defensivo en el perímetro. Mantén una distancia adecuada del atacante y reacciona tanto al bote como al pase.</string>
+
+    <!-- Ala-pívot -->
+    <string name="ej_alapivot_poste_titulo">Movimientos en el poste bajo — Ala-pívot</string>
+    <string name="ej_alapivot_poste_desc">Ejercicios de poste bajo adaptados al ala-pívot moderno: giros, finalizaciones cerca del aro, juego de pies y cómo sacar ventaja sin ser el jugador más alto.</string>
+    <string name="ej_alapivot_rebote_titulo">Rebote defensivo</string>
+    <string name="ej_alapivot_rebote_desc">Tras el tiro rival, bloquea al atacante con el cuerpo y salta a por el balón. Captura con dos manos y protégelo del rival al aterrizar.</string>
+    <string name="ej_alapivot_tres_titulo">Tiro de tres puntos</string>
+    <string name="ej_alapivot_tres_desc">Trabaja el tiro desde la línea de tres como arma adicional. Practica desde las esquinas y desde el top, tras recibir en movimiento.</string>
+
+    <!-- Pívot -->
+    <string name="ej_pivot_poste_titulo">Posteo bajo, ganchos y finalizaciones</string>
+    <string name="ej_pivot_poste_desc">Vídeo de referencia con los movimientos esenciales del pívot bajo el aro: posteo de espaldas, ganchos con ambas manos y finalizaciones cerca de canasta ante la defensa.</string>
+    <string name="ej_pivot_gancho_titulo">Tiro en gancho</string>
+    <string name="ej_pivot_gancho_desc">Desde el poste bajo, da un paso lateral alejándote del defensor y lanza el balón con un movimiento de brazo en arco por encima del defensor.</string>
+    <string name="ej_pivot_zona_titulo">Posicionamiento en zona</string>
+    <string name="ej_pivot_zona_desc">Trabaja el posicionamiento defensivo en zona. Mantén los brazos arriba, anticipa el pase y salta a tapar sin hacer falta personal.</string>
+
+    <!-- Vídeos fitness -->
+    <string name="vid_salto_titulo">Salto vertical — Entrenamiento completo</string>
+    <string name="vid_fuerza_titulo">Fuerza para baloncesto</string>
+    <string name="vid_resistencia_titulo">Resistencia y condición física</string>
+
     <!-- Pantalla fitness -->
     <string name="fitness_titulo">Entrenamiento físico</string>
     <string name="fitness_categoria_fuerza">Fuerza</string>

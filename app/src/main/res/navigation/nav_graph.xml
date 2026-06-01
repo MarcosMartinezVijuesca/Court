@@ -7,12 +7,20 @@
     <fragment
         android:id="@+id/ejerciciosFragment"
         android:name="com.court.app.ui.ejercicios.EjerciciosFragment"
-        android:label="@string/nav_ejercicios" />
+        android:label="@string/nav_ejercicios">
+        <action
+            android:id="@+id/action_ejercicios_to_detalle"
+            app:destination="@id/detalleEjercicioFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/videosFragment"
         android:name="com.court.app.ui.videos.VideosFragment"
-        android:label="@string/nav_videos" />
+        android:label="@string/nav_videos">
+        <action
+            android:id="@+id/action_videos_to_detalle"
+            app:destination="@id/detalleEjercicioFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/fitnessFragment"
@@ -28,15 +36,5 @@
             app:argType="integer"
             android:defaultValue="-1" />
     </fragment>
-    <fragment
-        android:id="@+id/ejerciciosFragment"
-        android:name="com.court.app.ui.ejercicios.EjerciciosFragment"
-        android:label="@string/nav_ejercicios">
-        <action
-            android:id="@+id/action_ejercicios_to_detalle"
-            app:destination="@id/detalleEjercicioFragment" />
-    </fragment>
-
-
 
 </navigation>

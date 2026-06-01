@@ -31,4 +31,12 @@ public interface EjercicioDao {
     // Obtener un ejercicio por ID (pantalla de detalle)
     @Query("SELECT * FROM ejercicios WHERE idEjercicio = :id LIMIT 1")
     LiveData<Ejercicio> obtenerPorId(int id);
+
+    // Solo ejercicios SIN vídeo (para la pestaña Drills)
+    @Query("SELECT * FROM ejercicios WHERE idRol = :idRol AND youtubeUrl IS NULL ORDER BY nivel ASC, titulo ASC")
+    LiveData<List<Ejercicio>> obtenerSinVideoPorRol(int idRol);
+
+    // Solo ejercicios CON vídeo (para la pestaña Videos)
+    @Query("SELECT * FROM ejercicios WHERE idRol = :idRol AND youtubeUrl IS NOT NULL ORDER BY nivel ASC, titulo ASC")
+    LiveData<List<Ejercicio>> obtenerConVideoPorRol(int idRol);
 }
