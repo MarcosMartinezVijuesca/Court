@@ -18,7 +18,7 @@ public interface RolDao {
     void insertarRoles(Rol... roles);
 
     // Obtener todos los roles — LiveData para que la UI se actualice automáticamente
-    @Query("SELECT * FROM roles ORDER BY nombre ASC")
+    @Query("SELECT * FROM roles ORDER BY idRol ASC")
     LiveData<List<Rol>> obtenerTodos();
 
     // Obtener un rol por su ID
