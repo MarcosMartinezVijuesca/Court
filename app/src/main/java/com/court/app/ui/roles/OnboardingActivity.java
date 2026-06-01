@@ -5,6 +5,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -37,7 +39,28 @@ public class OnboardingActivity extends AppCompatActivity {
             return;
         }
 
+        // Edge-to-edge API 35+
+        androidx.core.view.WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        androidx.core.view.WindowInsetsControllerCompat controller =
+                new androidx.core.view.WindowInsetsControllerCompat(getWindow(), getWindow().getDecorView());
+        controller.setAppearanceLightStatusBars(false);
+        getWindow().setStatusBarColor(
+                getResources().getColor(R.color.principal, getTheme())
+        );
+
+
         setContentView(R.layout.activity_onboarding);
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.layout_onboarding), (v, insets) -> {
+            int bottomInset = insets.getInsets(WindowInsetsCompat.Type.systemBars()).bottom;
+            v.setPadding(
+                    v.getPaddingLeft(),
+                    v.getPaddingTop(),
+                    v.getPaddingRight(),
+                    bottomInset + 4
+            );
+            return insets;
+        });
 
         btnEmpezar = findViewById(R.id.btn_empezar);
         RecyclerView rvRoles = findViewById(R.id.rv_roles);

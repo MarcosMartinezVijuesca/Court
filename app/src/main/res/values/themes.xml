@@ -2,6 +2,8 @@
 <resources>
     <style name="Theme.Court" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Color principal de la app -->
+        <item name="android:statusBarColor">@color/principal</item>
+        <item name="android:windowLightStatusBar">false</item>
         <item name="colorPrimary">@color/principal</item>
         <item name="colorPrimaryVariant">@color/texto_principal</item>
         <item name="colorOnPrimary">@color/texto_claro</item>
