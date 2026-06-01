@@ -38,4 +38,12 @@ public class EjercicioRepository {
     public LiveData<Ejercicio> obtenerPorId(int id) {
         return ejercicioDao.obtenerPorId(id);
     }
+
+    public LiveData<List<Ejercicio>> obtenerSinVideoPorRol(int idRol) {
+        return ejercicioDao.obtenerSinVideoPorRol(idRol);
+    }
+
+    public LiveData<List<Ejercicio>> obtenerConVideoPorRol(int idRol) {
+        return ejercicioDao.obtenerConVideoPorRol(idRol);
+    }
 }

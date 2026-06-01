@@ -32,4 +32,12 @@ public class EjercicioViewModel extends AndroidViewModel {
     public LiveData<Ejercicio> obtenerPorId(int id) {
         return repository.obtenerPorId(id);
     }
+
+    public LiveData<List<Ejercicio>> obtenerSinVideoPorRol(int idRol) {
+        return repository.obtenerSinVideoPorRol(idRol);
+    }
+
+    public LiveData<List<Ejercicio>> obtenerConVideoPorRol(int idRol) {
+        return repository.obtenerConVideoPorRol(idRol);
+    }
 }
