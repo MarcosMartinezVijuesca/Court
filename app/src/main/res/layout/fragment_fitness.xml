@@ -6,14 +6,23 @@
     android:background="?attr/colorSurface">
 
     <!-- Cabecera -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/fitness_titulo"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="?attr/colorOnSurface"
-        android:padding="16dp" />
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fitness_titulo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_claro" />
+
+    </LinearLayout>
 
     <!-- Chips de categoría -->
     <HorizontalScrollView
