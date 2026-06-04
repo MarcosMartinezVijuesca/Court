@@ -5,14 +5,25 @@
     android:orientation="vertical"
     android:background="?attr/colorSurface">
 
-    <TextView
+    <!-- Cabecera -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/favoritos_titulo"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="?attr/colorOnSurface"
-        android:padding="16dp" />
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:paddingBottom="12dp"
+        android:gravity="center_vertical"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/favoritos_titulo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_claro" />
+
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_favoritos"
