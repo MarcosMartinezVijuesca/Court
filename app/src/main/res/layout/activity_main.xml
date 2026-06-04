@@ -30,6 +30,7 @@
         app:itemIconTint="@color/texto_claro"
         app:itemTextColor="@color/texto_claro"
         app:menu="@menu/menu_bottom_nav"
-        app:labelVisibilityMode="labeled" />
+        app:labelVisibilityMode="labeled"
+        style="@style/BottomNavStyle"/>
 
 </LinearLayout>

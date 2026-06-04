@@ -27,5 +27,22 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
         NavigationUI.setupWithNavController(bottomNav, navController);
+
+        // Forzar colores del nav item
+        int[][] states = new int[][] {
+                new int[] { android.R.attr.state_checked },
+                new int[] { -android.R.attr.state_checked }
+        };
+        int[] colors = new int[] {
+                getResources().getColor(R.color.acento, getTheme()),
+                0xCCFFFFFF
+        };
+        android.content.res.ColorStateList colorStateList =
+                new android.content.res.ColorStateList(states, colors);
+
+        bottomNav.setItemIconTintList(colorStateList);
+        bottomNav.setItemTextColor(colorStateList);
+
+
     }
 }

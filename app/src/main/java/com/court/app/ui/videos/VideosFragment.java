@@ -19,6 +19,7 @@ import com.court.app.R;
 import com.court.app.ui.ejercicios.DetalleEjercicioFragment;
 import com.court.app.ui.ejercicios.EjercicioAdapter;
 import com.court.app.ui.roles.OnboardingActivity;
+import com.court.app.viewmodel.CompletadoViewModel;
 import com.court.app.viewmodel.EjercicioViewModel;
 import com.court.app.viewmodel.VideoViewModel;
 
@@ -55,6 +56,8 @@ public class VideosFragment extends Fragment {
             androidx.navigation.Navigation.findNavController(requireView())
                     .navigate(R.id.action_videos_to_detalle, args);
         });
+        CompletadoViewModel completadoViewModel = new ViewModelProvider(this).get(CompletadoViewModel.class);
+        adapter.setCompletadoViewModel(completadoViewModel, getViewLifecycleOwner());
         rvVideos.setLayoutManager(new LinearLayoutManager(requireContext()));
         rvVideos.setAdapter(adapter);
 

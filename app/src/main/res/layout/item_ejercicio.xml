@@ -44,6 +44,16 @@
             android:maxLines="2"
             android:ellipsize="end" />
 
+        <!-- Check completado -->
+        <ImageButton
+            android:id="@+id/btn_completado"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_check_vacio"
+            android:contentDescription="@string/confirmar"
+            android:layout_marginEnd="4dp" />
+
         <!-- Flecha -->
         <ImageView
             android:layout_width="16dp"

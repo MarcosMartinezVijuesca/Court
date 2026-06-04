@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.court.app.R;
 import com.court.app.ui.roles.OnboardingActivity;
+import com.court.app.viewmodel.CompletadoViewModel;
 import com.court.app.viewmodel.EjercicioViewModel;
 import com.court.app.viewmodel.RolViewModel;
 import com.google.android.material.chip.ChipGroup;
@@ -54,6 +55,9 @@ public class EjerciciosFragment extends Fragment {
             androidx.navigation.Navigation.findNavController(requireView())
                     .navigate(R.id.action_ejercicios_to_detalle, args);
         });
+        CompletadoViewModel completadoViewModel = new ViewModelProvider(this).get(CompletadoViewModel.class);
+        adapter.setCompletadoViewModel(completadoViewModel, getViewLifecycleOwner());
+
         rvEjercicios.setLayoutManager(new LinearLayoutManager(requireContext()));
         rvEjercicios.setAdapter(adapter);
 
@@ -93,6 +97,7 @@ public class EjerciciosFragment extends Fragment {
                             if (ejercicios != null) adapter.setEjercicios(ejercicios);
                         });
             }
+
         });
 
         // Cambiar rol

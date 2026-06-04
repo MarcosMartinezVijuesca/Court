@@ -32,4 +32,9 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+    <style name="BottomNavStyle" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="itemTextColor">@color/selector_nav_item</item>
+        <item name="itemIconTint">@color/selector_nav_item</item>
+    </style>
 </resources>
