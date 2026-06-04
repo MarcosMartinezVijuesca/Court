@@ -51,20 +51,18 @@ public class EjercicioAdapter extends RecyclerView.Adapter<EjercicioAdapter.Ejer
     @Override
     public void onBindViewHolder(@NonNull EjercicioViewHolder holder, int position) {
         Ejercicio ejercicio = ejercicios.get(position);
-
         holder.tvTitulo.setText(ejercicio.getTitulo());
-        holder.tvDesc.setText(ejercicio.getDescripcion());
 
-        // Badge de nivel localizado
+
         String nivel = ejercicio.getNivel().equals("basico")
                 ? holder.itemView.getContext().getString(R.string.ejercicio_nivel_basico)
                 : holder.itemView.getContext().getString(R.string.ejercicio_nivel_avanzado);
         holder.tvNivel.setText(nivel);
 
-        // Color del badge según nivel
+
         int colorBadge = ejercicio.getNivel().equals("basico")
-                ? 0xFF1347EA   // azul principal
-                : 0xFFFF6B2B;  // naranja acento
+                ? 0xFF1347EA
+                : 0xFFFF6B2B;
         holder.tvNivel.setBackgroundTintList(
                 android.content.res.ColorStateList.valueOf(colorBadge));
 
@@ -95,9 +93,7 @@ public class EjercicioAdapter extends RecyclerView.Adapter<EjercicioAdapter.Ejer
         EjercicioViewHolder(@NonNull View itemView) {
             super(itemView);
             card        = itemView.findViewById(R.id.card_ejercicio);
-            ivEjercicio = itemView.findViewById(R.id.iv_ejercicio);
             tvTitulo    = itemView.findViewById(R.id.tv_titulo_ejercicio);
-            tvDesc      = itemView.findViewById(R.id.tv_desc_ejercicio);
             tvNivel     = itemView.findViewById(R.id.tv_nivel);
             tvOrigen    = itemView.findViewById(R.id.tv_origen);
         }
