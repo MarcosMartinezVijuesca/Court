@@ -78,8 +78,10 @@ public abstract class CourtDatabase extends RoomDatabase {
                 int ID_ALA_PIVOT = 4;
                 int ID_PIVOT     = 5;
 
-                // ── EJERCICIOS BÁSICOS (compartidos, asignados al rol Base id=1) ──
+
                 ejDao.insertarEjercicios(
+
+                        // ── BASE ───────────────────────────────────────
                         new Ejercicio(ID_BASE, c.getString(R.string.ej_bote_titulo),
                                 c.getString(R.string.ej_bote_desc),
                                 "basico", null, "https://youtu.be/a6rPVGkGpds?t=65"),
@@ -95,11 +97,9 @@ public abstract class CourtDatabase extends RoomDatabase {
                         new Ejercicio(ID_BASE, c.getString(R.string.ej_pases_titulo),
                                 c.getString(R.string.ej_pases_desc),
                                 "basico", null, null),
-
-                        // ── AVANZADOS BASE ───────────────────────────────────────
                         new Ejercicio(ID_BASE, c.getString(R.string.ej_base_mov_titulo),
                                 c.getString(R.string.ej_base_mov_desc),
-                                "avanzado", null, "https://youtu.be/IX-VSlVfvmI?t=22"),
+                                "basico", null, "https://youtu.be/IX-VSlVfvmI?t=22"),
 
                         new Ejercicio(ID_BASE, c.getString(R.string.ej_base_pickroll_titulo),
                                 c.getString(R.string.ej_base_pickroll_desc),
@@ -109,50 +109,54 @@ public abstract class CourtDatabase extends RoomDatabase {
                                 c.getString(R.string.ej_base_ritmo_desc),
                                 "avanzado", null, null),
 
-                        // ── AVANZADOS ESCOLTA ────────────────────────────────────
+                        // ── ESCOLTA ────────────────────────────────────
                         new Ejercicio(ID_ESCOLTA, c.getString(R.string.ej_escolta_bote_titulo),
                                 c.getString(R.string.ej_escolta_bote_desc),
                                 "avanzado", null, "https://youtu.be/3AKCf4xbu2k?t=14"),
 
                         new Ejercicio(ID_ESCOLTA, c.getString(R.string.ej_escolta_catch_titulo),
                                 c.getString(R.string.ej_escolta_catch_desc),
-                                "avanzado", null, null),
+                                "basico", null, null),
 
                         new Ejercicio(ID_ESCOLTA, c.getString(R.string.ej_escolta_corte_titulo),
                                 c.getString(R.string.ej_escolta_corte_desc),
-                                "avanzado", null, null),
+                                "basico", null, null),
 
                         new Ejercicio(ID_ESCOLTA, c.getString(R.string.ej_escolta_floater_titulo),
                                 c.getString(R.string.ej_escolta_floater_desc),
                                 "avanzado", null, null),
 
-                        // ── AVANZADOS ALERO ──────────────────────────────────────
+                        // ── ALERO ──────────────────────────────────────
                         new Ejercicio(ID_ALERO, c.getString(R.string.ej_alero_mov_titulo),
                                 c.getString(R.string.ej_alero_mov_desc),
-                                "avanzado", null, "https://youtu.be/BGuOzD0h854?t=35"),
+                                "basico", null, "https://youtu.be/BGuOzD0h854?t=35"),
 
                         new Ejercicio(ID_ALERO, c.getString(R.string.ej_alero_rebote_titulo),
                                 c.getString(R.string.ej_alero_rebote_desc),
-                                "avanzado", null, null),
+                                "basico", null, null),
 
                         new Ejercicio(ID_ALERO, c.getString(R.string.ej_alero_defensa_titulo),
                                 c.getString(R.string.ej_alero_defensa_desc),
                                 "avanzado", null, null),
 
-                        // ── AVANZADOS ALA-PÍVOT ──────────────────────────────────
+                        // ── ALA-PÍVOT ──────────────────────────────────
                         new Ejercicio(ID_ALA_PIVOT, c.getString(R.string.ej_alapivot_poste_titulo),
                                 c.getString(R.string.ej_alapivot_poste_desc),
-                                "avanzado", null, "https://youtu.be/0hRQ0eltVzQ?t=2"),
+                                "basico", null, "https://youtu.be/0hRQ0eltVzQ?t=2"),
+
+                        new Ejercicio(ID_ALA_PIVOT, c.getString(R.string.ej_pivot_poste_titulo),
+                                c.getString(R.string.ej_pivot_poste_desc),
+                                "avanzado", null, "https://youtu.be/dkxFtT0GUP0?t=13"),
 
                         new Ejercicio(ID_ALA_PIVOT, c.getString(R.string.ej_alapivot_rebote_titulo),
                                 c.getString(R.string.ej_alapivot_rebote_desc),
-                                "avanzado", null, null),
+                                "basico", null, null),
 
                         new Ejercicio(ID_ALA_PIVOT, c.getString(R.string.ej_alapivot_tres_titulo),
                                 c.getString(R.string.ej_alapivot_tres_desc),
                                 "avanzado", null, null),
 
-                        // ── AVANZADOS PÍVOT ──────────────────────────────────────
+                        // ── PÍVOT ──────────────────────────────────────
                         new Ejercicio(ID_PIVOT, c.getString(R.string.ej_pivot_poste_titulo),
                                 c.getString(R.string.ej_pivot_poste_desc),
                                 "avanzado", null, "https://youtu.be/dkxFtT0GUP0?t=13"),
