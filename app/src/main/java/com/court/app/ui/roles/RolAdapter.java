@@ -19,7 +19,7 @@ import java.util.List;
 public class RolAdapter extends RecyclerView.Adapter<RolAdapter.RolViewHolder> {
 
     // Iconos por posición (emojis de baloncesto para cada rol)
-    private static final String[] ICONOS = {"🎯", "🎯", "🏃", "💪", "🏆"};
+    private static final String[] ICONOS = {"🏃🏽‍♂️‍➡️", "🎯", "⛹🏽‍♂️", "💪", "🏆"};
 
     private List<Rol> roles = new ArrayList<>();
     private int posicionSeleccionada = -1;

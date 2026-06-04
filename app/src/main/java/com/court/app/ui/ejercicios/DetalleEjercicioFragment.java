@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,6 +17,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.court.app.R;
 import com.court.app.viewmodel.EjercicioViewModel;
+import com.court.app.viewmodel.FavoritoViewModel;
 import com.google.android.material.button.MaterialButton;
 
 public class DetalleEjercicioFragment extends Fragment {
@@ -49,6 +51,30 @@ public class DetalleEjercicioFragment extends Fragment {
         TextView tvNivel            = view.findViewById(R.id.tv_detalle_nivel);
         MaterialButton btnVerVideo  = view.findViewById(R.id.btn_ver_video);
         TextView tvSinVideo         = view.findViewById(R.id.tv_sin_video);
+        ImageButton btnFavorito = view.findViewById(R.id.btn_favorito);
+        FavoritoViewModel favoritoViewModel = new ViewModelProvider(this).get(FavoritoViewModel.class);
+
+
+        final boolean[] esFavoritoActual = {false};
+
+        favoritoViewModel.esFavorito(idEjercicio).observe(getViewLifecycleOwner(), count -> {
+            esFavoritoActual[0] = count != null && count > 0;
+            if (esFavoritoActual[0]) {
+                btnFavorito.setImageResource(R.drawable.ic_estrella_llena);
+                btnFavorito.setContentDescription(getString(R.string.favoritos_eliminar));
+            } else {
+                btnFavorito.setImageResource(R.drawable.ic_estrella_vacia);
+                btnFavorito.setContentDescription(getString(R.string.favoritos_añadir));
+            }
+        });
+
+        btnFavorito.setOnClickListener(v -> {
+            if (esFavoritoActual[0]) {
+                favoritoViewModel.eliminar(idEjercicio);
+            } else {
+                favoritoViewModel.guardar(idEjercicio);
+            }
+        });
 
         viewModel = new ViewModelProvider(this).get(EjercicioViewModel.class);
         viewModel.obtenerPorId(idEjercicio).observe(getViewLifecycleOwner(), ejercicio -> {

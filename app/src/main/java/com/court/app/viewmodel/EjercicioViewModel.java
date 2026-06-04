@@ -19,6 +19,7 @@ public class EjercicioViewModel extends AndroidViewModel {
     private final MutableLiveData<Integer> idRolActivo = new MutableLiveData<>();
     public final LiveData<List<Ejercicio>> ejerciciosPorRol;
 
+
     public EjercicioViewModel(@NonNull Application application) {
         super(application);
         repository = new EjercicioRepository(application);

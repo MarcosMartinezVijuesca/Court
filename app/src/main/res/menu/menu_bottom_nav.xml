@@ -16,4 +16,9 @@
         android:icon="@drawable/ic_nav_fitness"
         android:title="@string/nav_fitness" />
 
+    <item
+        android:id="@+id/favoritosFragment"
+        android:icon="@drawable/ic_nav_favoritos"
+        android:title="@string/nav_favoritos" />
+
 </menu>
