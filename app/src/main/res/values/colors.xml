@@ -5,7 +5,7 @@
     <color name="acento">#FF6B2B</color>
 
     <!-- Modo claro -->
-    <color name="fondo">#E2F6F6</color>
+    <color name="fondo">#F0F2F5</color>
     <color name="fondo_tarjeta">#FFFFFF</color>
     <color name="texto_principal">#0D1B4B</color>
     <color name="texto_secundario">#4A5568</color>
