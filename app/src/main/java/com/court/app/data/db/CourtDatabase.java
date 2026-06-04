@@ -9,6 +9,7 @@ import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
 import com.court.app.R;
+import com.court.app.data.model.Completado;
 import com.court.app.data.model.Ejercicio;
 import com.court.app.data.model.Favorito;
 import com.court.app.data.model.Rol;
@@ -18,8 +19,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 @Database(
-        entities  = { Rol.class, Ejercicio.class, Video.class, Favorito.class },
-        version   = 1,
+        entities  = { Rol.class, Ejercicio.class, Video.class, Favorito.class, Completado.class },
+        version   = 2,
         exportSchema = false
 )
 public abstract class CourtDatabase extends RoomDatabase {
@@ -28,6 +29,7 @@ public abstract class CourtDatabase extends RoomDatabase {
     public abstract EjercicioDao ejercicioDao();
     public abstract VideoDao     videoDao();
     public abstract FavoritoDao  favoritoDao();
+    public abstract CompletadoDao completadoDao();
 
     private static volatile CourtDatabase INSTANCE;
     public static final ExecutorService dbExecutor = Executors.newFixedThreadPool(4);

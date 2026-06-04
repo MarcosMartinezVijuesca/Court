@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.court.app.R;
 import com.court.app.ui.ejercicios.DetalleEjercicioFragment;
 import com.court.app.ui.ejercicios.EjercicioAdapter;
+import com.court.app.viewmodel.CompletadoViewModel;
 import com.court.app.viewmodel.FavoritoViewModel;
 
 public class FavoritosFragment extends Fragment {
@@ -41,6 +42,8 @@ public class FavoritosFragment extends Fragment {
             androidx.navigation.Navigation.findNavController(requireView())
                     .navigate(R.id.action_favoritos_to_detalle, args);
         });
+        CompletadoViewModel completadoViewModel = new ViewModelProvider(this).get(CompletadoViewModel.class);
+        adapter.setCompletadoViewModel(completadoViewModel, getViewLifecycleOwner());
         adapter.setMostrarOrigen(true);
         rvFavoritos.setLayoutManager(new LinearLayoutManager(requireContext()));
         rvFavoritos.setAdapter(adapter);
