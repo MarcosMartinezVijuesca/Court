@@ -62,5 +62,17 @@ public class VideosFragment extends Fragment {
         viewModel.obtenerConVideoPorRol(idRol).observe(getViewLifecycleOwner(), ejercicios -> {
             if (ejercicios != null) adapter.setEjercicios(ejercicios);
         });
+
+        // Cambiar rol
+        view.findViewById(R.id.tv_cambiar_rol_videos).setOnClickListener(v -> {
+            prefs.edit()
+                    .remove(OnboardingActivity.KEY_ID_ROL)
+                    .putBoolean(OnboardingActivity.KEY_ONBOARDING, false)
+                    .apply();
+            Intent intent = new Intent(requireActivity(), OnboardingActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            requireActivity().finish();
+        });
     }
 }
