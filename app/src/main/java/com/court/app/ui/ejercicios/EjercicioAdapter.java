@@ -25,6 +25,12 @@ public class EjercicioAdapter extends RecyclerView.Adapter<EjercicioAdapter.Ejer
     private List<Ejercicio> ejercicios = new ArrayList<>();
     private final OnEjercicioClickListener listener;
 
+    private boolean mostrarOrigen = false;
+
+    public void setMostrarOrigen(boolean mostrar) {
+        this.mostrarOrigen = mostrar;
+    }
+
     public EjercicioAdapter(OnEjercicioClickListener listener) {
         this.listener = listener;
     }
@@ -63,6 +69,17 @@ public class EjercicioAdapter extends RecyclerView.Adapter<EjercicioAdapter.Ejer
                 android.content.res.ColorStateList.valueOf(colorBadge));
 
         holder.card.setOnClickListener(v -> listener.onEjercicioClick(ejercicio));
+
+        if (mostrarOrigen) {
+            if (ejercicio.getYoutubeUrl() != null && !ejercicio.getYoutubeUrl().isEmpty()) {
+                holder.tvOrigen.setText("▶ Video");
+            } else {
+                holder.tvOrigen.setText("📋 Drill");
+            }
+            holder.tvOrigen.setVisibility(View.VISIBLE);
+        } else {
+            holder.tvOrigen.setVisibility(View.GONE);
+        }
     }
 
     @Override
@@ -73,7 +90,7 @@ public class EjercicioAdapter extends RecyclerView.Adapter<EjercicioAdapter.Ejer
     static class EjercicioViewHolder extends RecyclerView.ViewHolder {
         MaterialCardView card;
         ImageView ivEjercicio;
-        TextView tvTitulo, tvDesc, tvNivel;
+        TextView tvTitulo, tvDesc, tvNivel, tvOrigen;
 
         EjercicioViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -82,6 +99,7 @@ public class EjercicioAdapter extends RecyclerView.Adapter<EjercicioAdapter.Ejer
             tvTitulo    = itemView.findViewById(R.id.tv_titulo_ejercicio);
             tvDesc      = itemView.findViewById(R.id.tv_desc_ejercicio);
             tvNivel     = itemView.findViewById(R.id.tv_nivel);
+            tvOrigen    = itemView.findViewById(R.id.tv_origen);
         }
     }
 }
