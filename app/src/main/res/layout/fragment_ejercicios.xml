@@ -39,6 +39,49 @@
 
     </LinearLayout>
 
+    <!-- Chips de filtro -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group_nivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_todos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fitness_todos"
+                android:checked="true"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_basico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ejercicio_nivel_basico"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_avanzado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ejercicio_nivel_avanzado"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
     <!-- Lista de ejercicios -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_ejercicios"

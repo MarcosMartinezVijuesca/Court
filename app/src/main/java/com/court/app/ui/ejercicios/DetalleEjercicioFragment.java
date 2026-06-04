@@ -96,7 +96,7 @@ public class DetalleEjercicioFragment extends Fragment {
             tvNivel.setBackgroundTintList(
                     android.content.res.ColorStateList.valueOf(colorBadge));
 
-            // Imagen local desde assets (cuando tengamos imágenes)
+
             // Por ahora mostramos el icono por defecto
             ivImagen.setImageResource(R.drawable.ic_nav_ejercicios);
 

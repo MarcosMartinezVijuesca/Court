@@ -19,6 +19,7 @@ import com.court.app.R;
 import com.court.app.ui.roles.OnboardingActivity;
 import com.court.app.viewmodel.EjercicioViewModel;
 import com.court.app.viewmodel.RolViewModel;
+import com.google.android.material.chip.ChipGroup;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -70,6 +71,28 @@ public class EjerciciosFragment extends Fragment {
         ejercicioViewModel.setRol(idRol);
         ejercicioViewModel.obtenerSinVideoPorRol(idRol).observe(getViewLifecycleOwner(), ejercicios -> {
             if (ejercicios != null) adapter.setEjercicios(ejercicios);
+        });
+
+        ChipGroup chipGroup = view.findViewById(R.id.chip_group_nivel);
+        chipGroup.setOnCheckedStateChangeListener((group, checkedIds) -> {
+            if (checkedIds.isEmpty()) return;
+            int chipId = checkedIds.get(0);
+            if (chipId == R.id.chip_basico) {
+                ejercicioViewModel.obtenerBasicosPorRol(idRol)
+                        .observe(getViewLifecycleOwner(), ejercicios -> {
+                            if (ejercicios != null) adapter.setEjercicios(ejercicios);
+                        });
+            } else if (chipId == R.id.chip_avanzado) {
+                ejercicioViewModel.obtenerAvanzadosPorRol(idRol)
+                        .observe(getViewLifecycleOwner(), ejercicios -> {
+                            if (ejercicios != null) adapter.setEjercicios(ejercicios);
+                        });
+            } else {
+                ejercicioViewModel.obtenerSinVideoPorRol(idRol)
+                        .observe(getViewLifecycleOwner(), ejercicios -> {
+                            if (ejercicios != null) adapter.setEjercicios(ejercicios);
+                        });
+            }
         });
 
         // Cambiar rol
