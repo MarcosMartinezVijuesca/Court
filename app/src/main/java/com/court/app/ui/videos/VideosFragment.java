@@ -49,7 +49,6 @@ public class VideosFragment extends Fragment {
 
         RecyclerView rvVideos = view.findViewById(R.id.rv_videos);
 
-        // Reutilizamos EjercicioAdapter ya que ahora Videos muestra ejercicios con URL
         VideoEjercicioAdapter adapter = new VideoEjercicioAdapter(ejercicio -> {
             Bundle args = new Bundle();
             args.putInt(DetalleEjercicioFragment.ARG_ID_EJERCICIO, ejercicio.getIdEjercicio());

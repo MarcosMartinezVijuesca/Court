@@ -65,12 +65,17 @@ public class EjercicioAdapter extends RecyclerView.Adapter<EjercicioAdapter.Ejer
                 : holder.itemView.getContext().getString(R.string.ejercicio_nivel_avanzado);
         holder.tvNivel.setText(nivel);
 
-
         int colorBadge = ejercicio.getNivel().equals("basico")
                 ? 0xFF1347EA
                 : 0xFFFF6B2B;
         holder.tvNivel.setBackgroundTintList(
                 android.content.res.ColorStateList.valueOf(colorBadge));
+
+        if (ejercicio.getYoutubeUrl() != null && !ejercicio.getYoutubeUrl().isEmpty()) {
+            holder.ivEjercicio.setImageResource(R.drawable.court_videos);
+        } else {
+            holder.ivEjercicio.setImageResource(R.drawable.court_drills);
+        }
 
         holder.card.setOnClickListener(v -> listener.onEjercicioClick(ejercicio));
 
@@ -78,7 +83,6 @@ public class EjercicioAdapter extends RecyclerView.Adapter<EjercicioAdapter.Ejer
             completadoViewModel.estaCompletado(ejercicio.getIdEjercicio())
                     .observe(lifecycleOwner, count -> {
                         boolean completado = count != null && count > 0;
-                        // Detectar si estamos en tema oscuro
                         boolean isDarkTheme = (holder.itemView.getContext().getResources().getConfiguration().uiMode
                                 & android.content.res.Configuration.UI_MODE_NIGHT_MASK)
                                 == android.content.res.Configuration.UI_MODE_NIGHT_YES;
@@ -99,12 +103,6 @@ public class EjercicioAdapter extends RecyclerView.Adapter<EjercicioAdapter.Ejer
         }
 
         if (mostrarOrigen) {
-            // Imagen según tipo (drill o video)
-            if (ejercicio.getYoutubeUrl() != null && !ejercicio.getYoutubeUrl().isEmpty()) {
-                holder.ivEjercicio.setImageResource(R.drawable.court_videos);
-            } else {
-                holder.ivEjercicio.setImageResource(R.drawable.court_drills);
-            }
             holder.tvOrigen.setVisibility(View.VISIBLE);
         } else {
             holder.tvOrigen.setVisibility(View.GONE);
