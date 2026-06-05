@@ -99,10 +99,11 @@ public class EjercicioAdapter extends RecyclerView.Adapter<EjercicioAdapter.Ejer
         }
 
         if (mostrarOrigen) {
+            // Imagen según tipo (drill o video)
             if (ejercicio.getYoutubeUrl() != null && !ejercicio.getYoutubeUrl().isEmpty()) {
-                holder.tvOrigen.setText("▶ Video");
+                holder.ivEjercicio.setImageResource(R.drawable.court_videos);
             } else {
-                holder.tvOrigen.setText("📋 Drill");
+                holder.ivEjercicio.setImageResource(R.drawable.court_drills);
             }
             holder.tvOrigen.setVisibility(View.VISIBLE);
         } else {
@@ -128,6 +129,7 @@ public class EjercicioAdapter extends RecyclerView.Adapter<EjercicioAdapter.Ejer
             tvDesc      = itemView.findViewById(R.id.tv_desc_ejercicio);
             tvNivel     = itemView.findViewById(R.id.tv_nivel);
             tvOrigen    = itemView.findViewById(R.id.tv_origen);
+            ivEjercicio = itemView.findViewById(R.id.iv_ejercicio);
         }
     }
 }
