@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ejerciciosFragment">
+
+    <fragment
+        android:id="@+id/ejerciciosFragment"
+        android:name="com.court.app.ui.ejercicios.EjerciciosFragment"
+        android:label="@string/nav_ejercicios">
+        <action
+            android:id="@+id/action_ejercicios_to_detalle"
+            app:destination="@id/detalleEjercicioFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/videosFragment"
+        android:name="com.court.app.ui.videos.VideosFragment"
+        android:label="@string/nav_videos">
+        <action
+            android:id="@+id/action_videos_to_detalle"
+            app:destination="@id/detalleEjercicioFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fitnessFragment"
+        android:name="com.court.app.ui.fitness.FitnessFragment"
+        android:label="@string/nav_fitness" />
+
+    <fragment
+        android:id="@+id/detalleEjercicioFragment"
+        android:name="com.court.app.ui.ejercicios.DetalleEjercicioFragment"
+        android:label="@string/ejercicios_titulo">
+        <argument
+            android:name="id_ejercicio"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoritosFragment"
+        android:name="com.court.app.ui.favoritos.FavoritosFragment"
+        android:label="@string/nav_favoritos">
+        <action
+            android:id="@+id/action_favoritos_to_detalle"
+            app:destination="@id/detalleEjercicioFragment" />
+    </fragment>
+
+</navigation>

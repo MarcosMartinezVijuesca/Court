@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Court</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_titulo">What\'s your position?</string>
+    <string name="onboarding_subtitulo">Select your role on the court to personalize your training</string>
+    <string name="onboarding_boton">Get started</string>
+
+    <!-- Roles -->
+    <string name="rol_base">Point Guard</string>
+    <string name="rol_escolta">Shooting Guard</string>
+    <string name="rol_alero">Small Forward</string>
+    <string name="rol_ala_pivot">Power Forward</string>
+    <string name="rol_pivot">Center</string>
+
+    <!-- Role descriptions -->
+    <string name="desc_base">Team organizer. Ball handling, vision and speed.</string>
+    <string name="desc_escolta">Outside scorer. Shooting and driving to the basket.</string>
+    <string name="desc_alero">Versatile player. Shooting, rebounding and perimeter defense.</string>
+    <string name="desc_ala_pivot">Inside and outside game. Strength and mid-range shooting.</string>
+    <string name="desc_pivot">Dominates under the rim. Post play, rebounding and interior defense.</string>
+
+    <!-- Navigation -->
+    <string name="nav_ejercicios">Drills</string>
+    <string name="nav_videos">Videos</string>
+    <string name="nav_fitness">Fitness</string>
+    <string name="nav_favoritos">Favorites</string>
+    <string name="fitness_todos">All</string>
+
+    <!-- Common new drills -->
+    <string name="ej_figure_eight_titulo">Figure Eight</string>
+    <string name="ej_figure_eight_desc">Dribble the ball in a figure eight pattern between your legs at ankle level. Keep your back straight and use your fingertips. Do 3 sets of 30 seconds. Improves ball control and coordination.</string>
+
+
+    <!-- Drills screen -->
+    <string name="ejercicios_titulo">Drills</string>
+    <string name="ejercicios_basicos">Basic drills</string>
+    <string name="ejercicios_avanzados">Advanced drills</string>
+    <string name="ejercicio_nivel_basico">Basic</string>
+    <string name="ejercicio_nivel_avanzado">Advanced</string>
+    <string name="ejercicio_ver_video">Watch video</string>
+    <string name="ejercicio_sin_video">No video available</string>
+
+    <!-- Videos screen -->
+    <string name="videos_titulo">Technical videos</string>
+    <string name="videos_vacio">No videos available for this role</string>
+
+    <!-- Basic drills -->
+    <string name="ej_bote_titulo">Dribbling with both hands</string>
+    <string name="ej_bote_desc">Practice dribbling alternating right and left hand. Keep your head up and eyes forward. Do 3 sets of 30 seconds per hand.</string>
+    <string name="ej_tiro_titulo">Shooting technique</string>
+    <string name="ej_tiro_desc">Place your feet shoulder-width apart. Bend your knees, align your elbow with the basket and release the ball with a smooth wrist motion. Do 20 repetitions.</string>
+    <string name="ej_defensa_titulo">Individual defense</string>
+    <string name="ej_defensa_desc">Adopt the defensive stance with bent knees, straight back and extended arms. Move laterally following the attacker without crossing your feet.</string>
+    <string name="ej_pases_titulo">Chest passes</string>
+    <string name="ej_pases_desc">Hold the ball with both hands at chest height. Extend your arms toward your teammate and release the ball with a wrist snap. Do 3 sets of 15 repetitions.</string>
+
+    <!-- Point Guard -->
+    <string name="ej_base_mov_titulo">Point Guard movements</string>
+    <string name="ej_base_mov_desc">Reference video with fundamental point guard movements: ball handling on the move, direction changes, court vision and quick decision making.</string>
+    <string name="ej_base_pickroll_titulo">Pick and Roll</string>
+    <string name="ej_base_pickroll_desc">Coordinate with the center to use the screen. After the screen, decide whether to drive, shoot or pass to the roller based on the defense reaction.</string>
+    <string name="ej_base_ritmo_titulo">Change of pace</string>
+    <string name="ej_base_ritmo_desc">Alternate between fast and slow dribble to unbalance the defender. Use the speed change when the defender drops their guard.</string>
+    <string name="ej_base_diapos_titulo">Defensive slides</string>
+    <string name="ej_base_diapos_desc">From the defensive stance, practice quick lateral movements of 4-5 meters in each direction without crossing your feet. React by changing direction. Work on anticipation to intercept the opponent\'s dribble. 3 sets of 45 seconds.</string>
+    <string name="ej_base_presion_titulo">Ball pressure</string>
+    <string name="ej_base_presion_desc">Position yourself half an arm\'s length from the attacker with your active hand on the ball. Without fouling, maintain pressure to disrupt the dribble and pass. The goal is to force errors and slow down the opponent\'s game.</string>
+    <string name="ej_base_suspension_titulo">Pull-up jump shot</string>
+    <string name="ej_base_suspension_desc">From the three-point line, take 1-2 dribbles toward the basket and finish with a jump shot in the mid-range area. Work on balance and elevation before releasing the ball.</string>
+    <string name="ej_base_lectura_titulo">Reading screens</string>
+    <string name="ej_base_lectura_desc">Practice reading the defense after a screen: if the defender goes behind the screen, shoot three; if they get caught, drive; if there\'s defensive help, pass to the screener. Train quick decision-making.</string>
+    <string name="ej_base_vision_titulo">Peripheral vision and passing</string>
+    <string name="ej_base_vision_desc">While dribbling with your head up, identify teammates on the perimeter and deliver the pass at the right moment without telegraphing your intent. A point guard who doesn\'t look at the ball has an advantage over the defense.</string>
+    <string name="ej_base_penetracion_titulo">Drive and layup</string>
+    <string name="ej_base_penetracion_desc">From the three-point line, drive to the basket avoiding the defender. Finish with a layup using the hand furthest from the defender. Practice from both sides.</string>
+
+    <!-- Shooting Guard -->
+    <string name="ej_escolta_bote_titulo">Dribbling on the move and shooting guard drills</string>
+    <string name="ej_escolta_bote_desc">Dribbling drills combined with shooting guard technical moves: crossover, between the legs, behind the back and finishes at the rim.</string>
+    <string name="ej_escolta_catch_titulo">Catch and Shoot</string>
+    <string name="ej_escolta_catch_desc">Prepare your shot before receiving the ball. As soon as you catch it, shoot directly without extra dribbles. The goal is to reduce your release time.</string>
+    <string name="ej_escolta_corte_titulo">Off-ball cut</string>
+    <string name="ej_escolta_corte_desc">Fake going one direction and cut sharply toward the rim or open space. The goal is to get open from your defender to receive the pass.</string>
+    <string name="ej_escolta_floater_titulo">Floater</string>
+    <string name="ej_escolta_floater_desc">On a drive, shoot a soft shot over the interior defender when you can\'t reach the rim with a regular layup. Practice from both sides.</string>
+    <string name="ej_escolta_esquinas_titulo">Corner three-point shooting</string>
+    <string name="ej_escolta_esquinas_desc">Work on three-point shooting from both corners after receiving a pass. Corners are the most efficient spots to shoot threes. Practice catch and shoot and shooting after an adjustment step.</string>
+    <string name="ej_escolta_closeout_titulo">Defensive closeout</string>
+    <string name="ej_escolta_closeout_desc">From the low post, react to a perimeter pass and close out quickly on the shooter with arms up. Work on controlled stopping and balance at the end without fouling.</string>
+    <string name="ej_escolta_defcorte_titulo">Defending off-ball cuts</string>
+    <string name="ej_escolta_defcorte_desc">Practice following the attacker in their off-ball movements using your body and peripheral vision. Anticipate cuts to the rim to never lose sight of the opponent or the ball.</string>
+    <string name="ej_escolta_diapos_titulo">Defensive slides</string>
+    <string name="ej_escolta_diapos_desc">From the defensive stance, practice quick lateral movements of 4-5 meters in each direction without crossing your feet. React by changing direction. 3 sets of 45 seconds.</string>
+    <string name="ej_escolta_suspension_titulo">Pull-up jump shot</string>
+    <string name="ej_escolta_suspension_desc">From the three-point line, take 1-2 dribbles toward the basket and finish with a jump shot in the mid-range area. Work on balance and elevation before releasing the ball.</string>
+
+    <!-- Small Forward -->
+    <string name="ej_alero_mov_titulo">General small forward drills</string>
+    <string name="ej_alero_mov_desc">Reference video with key small forward movements: mid-range shooting, off-ball movement, cuts to the rim, offensive rebounding and perimeter defense.</string>
+    <string name="ej_alero_rebote_titulo">Offensive rebound</string>
+    <string name="ej_alero_rebote_desc">Anticipate the shot trajectory and position yourself between the defender and the rim. Jump with both feet and catch the ball at its highest point.</string>
+    <string name="ej_alero_defensa_titulo">Perimeter defense</string>
+    <string name="ej_alero_defensa_desc">Work on defensive positioning on the perimeter. Keep proper distance from the attacker and react to both the dribble and the pass.</string>
+    <string name="ej_alero_triple_titulo">Triple threat</string>
+    <string name="ej_alero_triple_desc">From the triple threat position (dribble, shoot or pass possible), practice reading the defense and deciding in less than 2 seconds. If the defender is close, shoot; if they back off, drive; if there\'s help defense, pass.</string>
+    <string name="ej_alero_kickout_titulo">Drive and kick-out</string>
+    <string name="ej_alero_kickout_desc">Drive to the rim forcing defensive help and at the last moment pass to the open teammate on the perimeter. Work on peripheral vision during the drive and precise passing under pressure.</string>
+    <string name="ej_alero_bloqueo_titulo">Off-ball screen</string>
+    <string name="ej_alero_bloqueo_desc">Practice getting open using an off-ball screen from a teammate. After the screen, decide between coming off to shoot, cutting to the rim or spacing away to open up the floor.</string>
+    <string name="ej_alero_versatil_titulo">Versatile defense</string>
+    <string name="ej_alero_versatil_desc">The small forward must defend both perimeter and interior players. Practice switching assignments adapting your body position depending on whether the opponent is quicker or more physical.</string>
+    <string name="ej_alero_closeout_titulo">Defensive closeout</string>
+    <string name="ej_alero_closeout_desc">From the low post, react to a perimeter pass and close out quickly on the shooter with arms up. Work on controlled stopping and balance at the end without fouling.</string>
+    <string name="ej_alero_media_titulo">Mid-range shooting</string>
+    <string name="ej_alero_media_desc">From the high post or baseline, work on mid-range shooting after one dribble entry. Practice with and without a defender from both sides.</string>
+
+    <!-- Power Forward -->
+    <string name="ej_alapivot_poste_titulo">Post moves — Power Forward</string>
+    <string name="ej_alapivot_poste_desc">Post moves adapted to the modern power forward: spins, finishes near the rim, footwork and how to gain advantage without being the tallest player.</string>
+    <string name="ej_alapivot_rebote_titulo">Defensive rebound</string>
+    <string name="ej_alapivot_rebote_desc">After the opponent\'s shot, box out the attacker and jump for the ball. Catch with two hands and protect it from the opponent on landing.</string>
+    <string name="ej_alapivot_tres_titulo">Three-point shooting</string>
+    <string name="ej_alapivot_tres_desc">Work the three-point shot as an additional weapon. Practice from the corners and from the top, catching in motion.</string>
+    <string name="ej_alapivot_bloqueo_titulo">Ball screen</string>
+    <string name="ej_alapivot_bloqueo_desc">Position yourself with feet shoulder-width apart to screen the defender off your teammate. Hold the contact until the point guard clears the screen and roll to the rim or open space.</string>
+    <string name="ej_alapivot_pies_titulo">Post footwork</string>
+    <string name="ej_alapivot_pies_desc">Work on pivot turns from the high and low post: face-up turn, drop step and crossover step. Each move should end in a finish near the rim or a mid-range shot.</string>
+    <string name="ej_alapivot_defposte_titulo">Low post defense</string>
+    <string name="ej_alapivot_defposte_desc">Position yourself behind the attacker in the low post using your body to push them out of their favorite spot. Keep your arms active to disrupt the pass reception before they receive the ball.</string>
+    <string name="ej_alapivot_defperim_titulo">Perimeter defense</string>
+    <string name="ej_alapivot_defperim_desc">The modern power forward must also defend on the perimeter. Practice closing out on three-point shooters with a short sprint followed by a controlled stop with arms up.</string>
+    <string name="ej_alapivot_rebofens_titulo">Offensive rebound</string>
+    <string name="ej_alapivot_rebofens_desc">Anticipate the shot trajectory and position yourself between the defender and the rim. Jump with both feet and catch the ball at its highest point. Protect it upon landing.</string>
+    <string name="ej_alapivot_media_titulo">Mid-range shooting</string>
+    <string name="ej_alapivot_media_desc">From the high post, work on mid-range shooting after one dribble entry. Practice from both sides of the post with and without a defender.</string>
+
+    <!-- Center -->
+    <string name="ej_pivot_poste_titulo">Post play, hooks and finishes</string>
+    <string name="ej_pivot_poste_desc">Reference video with essential center moves under the rim: back-to-basket post play, hook shots with both hands and finishes close to the basket.</string>
+    <string name="ej_pivot_gancho_titulo">Hook shot</string>
+    <string name="ej_pivot_gancho_desc">From the low post, take a lateral step away from the defender and release the ball with an arcing arm motion over the defender.</string>
+    <string name="ej_pivot_zona_titulo">Zone positioning</string>
+    <string name="ej_pivot_zona_desc">Work on defensive zone positioning. Keep your arms up, anticipate the pass and jump to block without committing a personal foul.</string>
+    <string name="ej_pivot_dropstep_titulo">Drop Step</string>
+    <string name="ej_pivot_dropstep_desc">From the low post with your back to the rim, take a long step toward the basket on the defender\'s weak side, pivot and finish with a layup or short shot. It\'s the most effective offensive move for a center near the rim.</string>
+    <string name="ej_pivot_pickroll_titulo">Pick and Roll — center\'s role</string>
+    <string name="ej_pivot_pickroll_desc">Practice the center\'s role in the pick and roll: set the screen correctly, roll to the rim or open space after contact and receive the pass from the point guard to finish near the rim.</string>
+    <string name="ej_pivot_tapon_titulo">Clean block</string>
+    <string name="ej_pivot_tapon_desc">Practice block timing by waiting for the moment the attacker releases the ball. The goal is to block the shot vertically without invading the opponent\'s space. A bad block means a foul; a good block changes the game.</string>
+    <string name="ej_pivot_defpivot_titulo">Defending the opposing center</string>
+    <string name="ej_pivot_defpivot_desc">Work on positioning behind and in front of the opposing center depending on the situation. In front to deny the pass; behind to anticipate the rebound. Use your body to hold position without fouling.</string>
+    <string name="ej_pivot_rebdef_titulo">Defensive rebound</string>
+    <string name="ej_pivot_rebdef_desc">After the opponent\'s shot, box out the attacker with your body and jump for the ball. Catch with two hands and protect it from the opponent upon landing.</string>
+    <string name="ej_pivot_zonapintada_titulo">Paint positioning</string>
+    <string name="ej_pivot_zonapintada_desc">Work on movement inside the zone to anticipate interior passes. Keep your arms up, your feet active and communicate with teammates to cover spaces without leaving gaps in the paint.</string>
+
+    <!-- Fitness videos -->
+    <string name="vid_salto_titulo">Vertical jump — Full training</string>
+    <string name="vid_fuerza_titulo">Basketball strength training</string>
+    <string name="vid_resistencia_titulo">Endurance and physical conditioning</string>
+
+    <!-- Fitness screen -->
+    <string name="fitness_titulo">Physical training</string>
+    <string name="fitness_categoria_fuerza">Strength</string>
+    <string name="fitness_categoria_salto">Jumping</string>
+    <string name="fitness_categoria_resistencia">Endurance</string>
+
+    <!-- Favorites -->
+    <string name="favoritos_titulo">My favorites</string>
+    <string name="favoritos_vacio">You have no favorite drills yet</string>
+    <string name="favoritos_añadir">Add to favorites</string>
+    <string name="favoritos_eliminar">Remove from favorites</string>
+
+    <!-- Done -->
+    <string name="marcar_realizado">Mark as done</string>
+    <string name="realizado">✓ Done</string>
+
+    <!-- Change role -->
+    <string name="cambiar_rol">Change role</string>
+    <string name="cambiar_rol_confirmacion">Do you want to change your position on the court?</string>
+    <string name="confirmar">Confirm</string>
+    <string name="cancelar">Cancel</string>
+
+    <!-- Errors and states -->
+    <string name="error_generico">An error occurred. Please try again.</string>
+    <string name="cargando">Loading…</string>
+    <string name="lista_vacia">No content available</string>
+
+    <!-- New videos -->
+    <string name="vid_base_avanzado_titulo">Advanced point guard drills</string>
+    <string name="vid_escolta_ataque_titulo">Attacking the rim drills</string>
+    <string name="vid_escolta_avanzado_titulo">Advanced shooting guard drills</string>
+    <string name="vid_alero_ofensivo_titulo">Small forward offensive drills</string>
+    <string name="vid_alero_avanzado_titulo">Advanced small forward drills</string>
+    <string name="vid_poste_simple_titulo">Basic post drills</string>
+    <string name="vid_poste_avanzado_titulo">Advanced post drills</string>
+    <string name="vid_bote_titulo">Dribbling with both hands</string>
+    <string name="vid_tiro_titulo">Shooting technique</string>
+
+    <!-- Video descriptions -->
+    <string name="vid_base_avanzado_desc">Complete advanced training session for point guards: high-speed ball handling, explosive direction changes and decision-making under defensive pressure.</string>
+    <string name="vid_escolta_ataque_desc">Specific drills for shooting guards attacking the rim: drives, finishes through contact and floaters from both sides.</string>
+    <string name="vid_escolta_avanzado_desc">Advanced training for shooting guards: attack moves combined with dribbling, reading the defense and varied finishes.</string>
+    <string name="vid_alero_ofensivo_desc">Offensive drills designed for small forwards: cuts to the rim, mid-range shooting, drives and off-ball movement to get open.</string>
+    <string name="vid_alero_avanzado_desc">Advanced training for small forwards: combination of offensive and defensive skills, game reading and versatility in different situations.</string>
+    <string name="vid_poste_simple_desc">Basic post drills: positioning, receiving the ball, simple pivots and finishes near the rim for interior players.</string>
+    <string name="vid_poste_avanzado_desc">Advanced post moves: chaining fakes, hooks, drop steps and finishes through contact for high-level interior players.</string>
+</resources>

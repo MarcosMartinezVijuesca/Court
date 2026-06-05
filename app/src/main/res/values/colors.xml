@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Colores principales -->
+    <color name="principal">#1347EA</color>
+    <color name="acento">#FF6B2B</color>
+
+    <!-- Modo claro -->
+    <color name="fondo">#F0F2F5</color>
+    <color name="fondo_tarjeta">#FFFFFF</color>
+    <color name="texto_principal">#0D1B4B</color>
+    <color name="texto_secundario">#4A5568</color>
+    <color name="texto_claro">#FFFFFF</color>
+
+    <!-- Modo oscuro -->
+    <color name="fondo_oscuro">#0D1225</color>
+    <color name="fondo_tarjeta_oscuro">#1A2340</color>
+    <color name="texto_principal_oscuro">#E2F6F6</color>
+    <color name="texto_secundario_oscuro">#A0AEC0</color>
+
+    <!-- Roles — color de acento por posición -->
+    <color name="color_base">#1347EA</color>
+    <color name="color_escolta">#0F9B8E</color>
+    <color name="color_alero">#7B2FBE</color>
+    <color name="color_ala_pivot">#D97706</color>
+    <color name="color_pivot">#DC2626</color>
 </resources>

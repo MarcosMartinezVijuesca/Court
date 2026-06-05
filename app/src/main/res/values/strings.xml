@@ -1,3 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- App -->
     <string name="app_name">Court</string>
+
+    <!-- Onboarding — selección de rol -->
+    <string name="onboarding_titulo">¿Cuál es tu posición?</string>
+    <string name="onboarding_subtitulo">Selecciona tu rol en la cancha para personalizar tu entrenamiento</string>
+    <string name="onboarding_boton">Empezar</string>
+
+    <!-- Roles -->
+    <string name="rol_base">Base</string>
+    <string name="rol_escolta">Escolta</string>
+    <string name="rol_alero">Alero</string>
+    <string name="rol_ala_pivot">Ala-Pívot</string>
+    <string name="rol_pivot">Pívot</string>
+
+    <!-- Descripciones de roles -->
+    <string name="desc_base">Organizador del juego. Manejo, visión y velocidad.</string>
+    <string name="desc_escolta">Anotador exterior. Tiro y penetración.</string>
+    <string name="desc_alero">Versátil. Tiro, rebote y defensa perimetral.</string>
+    <string name="desc_ala_pivot">Juego interior y exterior. Fuerza y tiro medio.</string>
+    <string name="desc_pivot">Dominio bajo el aro. Posteo, rebote y defensa interior.</string>
+
+    <!-- Navegación -->
+    <string name="nav_ejercicios">Ejercicios</string>
+    <string name="nav_videos">Vídeos</string>
+    <string name="nav_fitness">Fitness</string>
+    <string name="nav_favoritos">Favoritos</string>
+    <string name="fitness_todos">Todos</string>
+
+    <!-- Pantalla ejercicios -->
+    <string name="ejercicios_titulo">Ejercicios</string>
+    <string name="ejercicios_basicos">Ejercicios básicos</string>
+    <string name="ejercicios_avanzados">Ejercicios avanzados</string>
+    <string name="ejercicio_nivel_basico">Básico</string>
+    <string name="ejercicio_nivel_avanzado">Avanzado</string>
+    <string name="ejercicio_ver_video">Ver vídeo</string>
+    <string name="ejercicio_sin_video">Sin vídeo disponible</string>
+
+    <!-- Pantalla vídeos -->
+    <string name="videos_titulo">Vídeos técnicos</string>
+    <string name="videos_vacio">No hay vídeos disponibles para este rol</string>
+
+    <!-- Drills comunes nuevos -->
+    <string name="ej_figure_eight_titulo">Figure Eight</string>
+    <string name="ej_figure_eight_desc">Bota el balón en forma de ocho entre las piernas a nivel de tobillo. Mantén la espalda recta y usa las yemas de los dedos. Realiza 3 series de 30 segundos. Mejora el control del balón y la coordinación.</string>
+
+
+    <!-- Ejercicios básicos -->
+    <string name="ej_bote_titulo">Bote con ambas manos</string>
+    <string name="ej_bote_desc">Practica el bote alternando la mano derecha e izquierda. Mantén la cabeza levantada y los ojos al frente. Realiza 3 series de 30 segundos por mano.</string>
+    <string name="ej_tiro_titulo">Técnica de tiro</string>
+    <string name="ej_tiro_desc">Coloca los pies a la anchura de los hombros. Flexiona las rodillas, alinea el codo con la canasta y suelta el balón con un movimiento suave de muñeca. Realiza 20 repeticiones.</string>
+    <string name="ej_defensa_titulo">Defensa individual</string>
+    <string name="ej_defensa_desc">Adopta la posición defensiva con rodillas flexionadas, espalda recta y brazos extendidos. Desplázate lateralmente siguiendo al atacante sin cruzar los pies.</string>
+    <string name="ej_pases_titulo">Pases de pecho</string>
+    <string name="ej_pases_desc">Agarra el balón con ambas manos a la altura del pecho. Extiende los brazos hacia el compañero y suelta el balón con un giro de muñecas. Realiza 3 series de 15 repeticiones.</string>
+
+    <!-- Base -->
+    <string name="ej_base_mov_titulo">Movimientos de base</string>
+    <string name="ej_base_mov_desc">Vídeo de referencia con los movimientos fundamentales del base: manejo de balón en movimiento, cambios de dirección, visión de juego y toma de decisiones rápidas en pista.</string>
+    <string name="ej_base_pickroll_titulo">Pick and Roll</string>
+    <string name="ej_base_pickroll_desc">Coordínate con el pívot para usar el bloqueo directo. Tras el bloqueo decide si penetrar, tirar o pasar al pívot según la reacción de la defensa.</string>
+    <string name="ej_base_ritmo_titulo">Cambio de ritmo</string>
+    <string name="ej_base_ritmo_desc">Alterna entre bote rápido y lento para desequilibrar al defensor. Usa el cambio de velocidad en el momento en que el defensor baje la guardia.</string>
+    <string name="ej_base_diapos_titulo">Diapositivas defensivas</string>
+    <string name="ej_base_diapos_desc">Desde la posición defensiva, practica desplazamientos laterales rápidos de 4-5 metros en cada dirección sin cruzar los pies. Reacciona cambiando de dirección. Trabaja la anticipación para interceptar el bote rival. 3 series de 45 segundos.</string>
+    <string name="ej_base_presion_titulo">Presión sobre el balón</string>
+    <string name="ej_base_presion_desc">Colócate a medio brazo del atacante con la mano activa sobre el balón. Sin cometer falta, mantén la presión para dificultar el bote y el pase. El objetivo es forzar errores y ralentizar el juego rival.</string>
+    <string name="ej_base_suspension_titulo">Tiro en suspensión tras bote</string>
+    <string name="ej_base_suspension_desc">Desde la línea de tres, realiza 1-2 botes hacia la canasta y finaliza con un tiro en suspensión en zona de media distancia. Trabaja el equilibrio y la elevación antes de soltar el balón.</string>
+    <string name="ej_base_lectura_titulo">Lectura de bloqueos</string>
+    <string name="ej_base_lectura_desc">Practica leer la defensa tras un bloqueo: si el defensor pasa por detrás, tira de tres; si se queda atrapado, penetra; si hay ayuda defensiva, pasa al bloqueador. Entrena la toma de decisión rápida.</string>
+    <string name="ej_base_vision_titulo">Visión periférica y pase</string>
+    <string name="ej_base_vision_desc">Mientras botas mirando al frente, identifica a los compañeros en el perímetro y ejecuta el pase en el momento correcto sin telegrafiar la intención. El base que no mira el balón al botar tiene ventaja sobre la defensa.</string>
+    <string name="ej_base_penetracion_titulo">Penetración y bandeja</string>
+    <string name="ej_base_penetracion_desc">Desde la línea de tres realiza una penetración al aro evitando al defensor. Finaliza con una bandeja usando la mano más alejada del defensor. Practica desde ambos lados.</string>
+
+    <!-- Escolta -->
+    <string name="ej_escolta_bote_titulo">Bote en movimiento y movimientos de escolta</string>
+    <string name="ej_escolta_bote_desc">Ejercicios de bote en movimiento combinados con los gestos técnicos propios del escolta: cambios de mano, entre piernas, detrás de la espalda y finalizaciones al aro.</string>
+    <string name="ej_escolta_catch_titulo">Catch and Shoot</string>
+    <string name="ej_escolta_catch_desc">Prepara el tiro antes de recibir el balón. En cuanto lo recibas, sin botes adicionales, lanza directamente. El objetivo es reducir el tiempo de lanzamiento.</string>
+    <string name="ej_escolta_corte_titulo">Corte sin balón</string>
+    <string name="ej_escolta_corte_desc">Finge ir en una dirección y corta bruscamente hacia el aro o hacia el espacio libre. El objetivo es desmarcarte del defensor para recibir el pase.</string>
+    <string name="ej_escolta_floater_titulo">Floater</string>
+    <string name="ej_escolta_floater_desc">En penetración, lanza un tiro suave por encima del pivote interior cuando no puedas llegar al aro con una bandeja normal. Practica desde ambos lados.</string>
+    <string name="ej_escolta_esquinas_titulo">Tiro desde las esquinas</string>
+    <string name="ej_escolta_esquinas_desc">Trabaja el tiro de tres puntos desde ambas esquinas tras recibir un pase. Las esquinas son los puntos más eficientes para tirar de tres. Practica el catch and shoot y el tiro tras un paso de ajuste.</string>
+    <string name="ej_escolta_closeout_titulo">Closeout defensivo</string>
+    <string name="ej_escolta_closeout_desc">Desde el poste bajo, reacciona a un pase al perímetro y cierra rápidamente sobre el tirador con los brazos arriba. Trabaja el frenado y el equilibrio final sin cometer falta.</string>
+    <string name="ej_escolta_defcorte_titulo">Defensa ante el corte</string>
+    <string name="ej_escolta_defcorte_desc">Practica seguir al atacante en sus desplazamientos sin balón usando el cuerpo y la visión periférica. Anticipa los cortes hacia el aro para no perder de vista ni al rival ni el balón.</string>
+    <string name="ej_escolta_diapos_titulo">Diapositivas defensivas</string>
+    <string name="ej_escolta_diapos_desc">Desde la posición defensiva, practica desplazamientos laterales rápidos de 4-5 metros en cada dirección sin cruzar los pies. Reacciona cambiando de dirección. 3 series de 45 segundos.</string>
+    <string name="ej_escolta_suspension_titulo">Tiro en suspensión tras bote</string>
+    <string name="ej_escolta_suspension_desc">Desde la línea de tres, realiza 1-2 botes hacia la canasta y finaliza con un tiro en suspensión en zona de media distancia. Trabaja el equilibrio y la elevación antes de soltar el balón.</string>
+
+    <!-- Alero -->
+    <string name="ej_alero_mov_titulo">Ejercicios generales para alero</string>
+    <string name="ej_alero_mov_desc">Vídeo de referencia con los movimientos clave del alero: tiro de media distancia, movimientos sin balón, cortes al aro, rebote ofensivo y defensa perimetral.</string>
+    <string name="ej_alero_rebote_titulo">Rebote ofensivo</string>
+    <string name="ej_alero_rebote_desc">Anticipa la trayectoria del tiro y posiciónate entre el defensor y el aro. Salta con los dos pies y captura el balón en el punto más alto.</string>
+    <string name="ej_alero_defensa_titulo">Defensa perimetral</string>
+    <string name="ej_alero_defensa_desc">Trabaja el posicionamiento defensivo en el perímetro. Mantén una distancia adecuada del atacante y reacciona tanto al bote como al pase.</string>
+    <string name="ej_alero_triple_titulo">Triple amenaza</string>
+    <string name="ej_alero_triple_desc">Desde la posición de triple amenaza (bote, tiro o pase posibles), practica leer la defensa y decidir en menos de 2 segundos. Si el defensor está cerca tira; si se retira penetra; si hay ayuda defensiva pasa.</string>
+    <string name="ej_alero_kickout_titulo">Penetración y kick-out</string>
+    <string name="ej_alero_kickout_desc">Penetra al aro forzando la ayuda defensiva y en el último momento pasa al compañero abierto en el perímetro. Trabaja la visión periférica durante la penetración y el pase de precisión bajo presión.</string>
+    <string name="ej_alero_bloqueo_titulo">Bloqueo indirecto</string>
+    <string name="ej_alero_bloqueo_desc">Practica desmarcarte usando un bloqueo indirecto de un compañero. Tras el bloqueo decide entre salir a recibir para tirar, cortar al aro o alejarte para abrir espacio. La lectura del defensor determina la opción correcta.</string>
+    <string name="ej_alero_versatil_titulo">Defensa versátil</string>
+    <string name="ej_alero_versatil_desc">El alero debe defender tanto jugadores exteriores como interiores. Practica cambiar de marcaje adaptando la posición del cuerpo según el rival sea más rápido o más físico.</string>
+    <string name="ej_alero_closeout_titulo">Closeout defensivo</string>
+    <string name="ej_alero_closeout_desc">Desde el poste bajo, reacciona a un pase al perímetro y cierra rápidamente sobre el tirador con los brazos arriba. Trabaja el frenado y el equilibrio final sin cometer falta.</string>
+    <string name="ej_alero_media_titulo">Tiro de media distancia</string>
+    <string name="ej_alero_media_desc">Desde el poste alto o la línea de fondo, trabaja el tiro de media distancia tras un bote de entrada. Practica con y sin defensor desde ambos lados.</string>
+
+    <!-- Ala-pívot -->
+    <string name="ej_alapivot_poste_titulo">Movimientos en el poste bajo — Ala-pívot</string>
+    <string name="ej_alapivot_poste_desc">Ejercicios de poste bajo adaptados al ala-pívot moderno: giros, finalizaciones cerca del aro, juego de pies y cómo sacar ventaja sin ser el jugador más alto.</string>
+    <string name="ej_alapivot_rebote_titulo">Rebote defensivo</string>
+    <string name="ej_alapivot_rebote_desc">Tras el tiro rival, bloquea al atacante con el cuerpo y salta a por el balón. Captura con dos manos y protégelo del rival al aterrizar.</string>
+    <string name="ej_alapivot_tres_titulo">Tiro de tres puntos</string>
+    <string name="ej_alapivot_tres_desc">Trabaja el tiro desde la línea de tres como arma adicional. Practica desde las esquinas y desde el top, tras recibir en movimiento.</string>
+    <string name="ej_alapivot_bloqueo_titulo">Bloqueo directo</string>
+    <string name="ej_alapivot_bloqueo_desc">Colócate con los pies a la anchura de hombros para bloquear al defensor de tu compañero. Mantén el contacto hasta que el base supere el bloqueo y sepárate hacia el aro o el espacio libre.</string>
+    <string name="ej_alapivot_pies_titulo">Juego de pies en el poste</string>
+    <string name="ej_alapivot_pies_desc">Trabaja los giros de pivote desde el poste alto y bajo: giro de cara al aro, giro de espaldas y paso cruzado. Cada movimiento debe terminar en una finalización cerca del aro o un tiro de media distancia.</string>
+    <string name="ej_alapivot_defposte_titulo">Defensa en el poste bajo</string>
+    <string name="ej_alapivot_defposte_desc">Posiciónate por detrás del atacante en el poste bajo usando el cuerpo para empujarlo fuera de su posición favorita. Mantén los brazos activos para dificultar la recepción del pase antes de que reciba el balón.</string>
+    <string name="ej_alapivot_defperim_titulo">Defensa en el perímetro</string>
+    <string name="ej_alapivot_defperim_desc">El ala-pívot moderno debe defender también en el perímetro. Practica cerrar sobre tiradores de tres con un sprint corto seguido de un frenado controlado con los brazos arriba.</string>
+    <string name="ej_alapivot_rebofens_titulo">Rebote ofensivo</string>
+    <string name="ej_alapivot_rebofens_desc">Anticipa la trayectoria del tiro y posiciónate entre el defensor y el aro. Salta con los dos pies y captura el balón en el punto más alto. Protégelo al aterrizar.</string>
+    <string name="ej_alapivot_media_titulo">Tiro de media distancia</string>
+    <string name="ej_alapivot_media_desc">Desde el poste alto trabaja el tiro de media distancia tras un bote de entrada. Practica desde ambos lados del poste con y sin defensor.</string>
+
+    <!-- Pívot -->
+    <string name="ej_pivot_poste_titulo">Posteo bajo, ganchos y finalizaciones</string>
+    <string name="ej_pivot_poste_desc">Vídeo de referencia con los movimientos esenciales del pívot bajo el aro: posteo de espaldas, ganchos con ambas manos y finalizaciones cerca de canasta ante la defensa.</string>
+    <string name="ej_pivot_gancho_titulo">Tiro en gancho</string>
+    <string name="ej_pivot_gancho_desc">Desde el poste bajo, da un paso lateral alejándote del defensor y lanza el balón con un movimiento de brazo en arco por encima del defensor.</string>
+    <string name="ej_pivot_zona_titulo">Posicionamiento en zona</string>
+    <string name="ej_pivot_zona_desc">Trabaja el posicionamiento defensivo en zona. Mantén los brazos arriba, anticipa el pase y salta a tapar sin hacer falta personal.</string>
+    <string name="ej_pivot_dropstep_titulo">Drop Step</string>
+    <string name="ej_pivot_dropstep_desc">Desde el poste bajo con la espalda al aro, da un paso largo hacia la canasta por el lado débil del defensor, gira y finaliza con una bandeja o un tiro corto. Es el movimiento ofensivo más efectivo del pívot cerca del aro.</string>
+    <string name="ej_pivot_pickroll_titulo">Pick and Roll — rol del pívot</string>
+    <string name="ej_pivot_pickroll_desc">Practica el rol del pívot en el bloqueo directo: coloca el bloqueo correctamente, sepárate al aro o al espacio libre tras el contacto y recibe el pase del base para finalizar cerca del aro.</string>
+    <string name="ej_pivot_tapon_titulo">Tapón sin falta</string>
+    <string name="ej_pivot_tapon_desc">Practica el timing del tapón esperando el momento en que el atacante suelta el balón. El objetivo es bloquear el tiro verticalmente sin invadir el espacio del rival. Un mal tapón supone falta; un buen tapón cambia el partido.</string>
+    <string name="ej_pivot_defpivot_titulo">Defensa ante el pívot rival</string>
+    <string name="ej_pivot_defpivot_desc">Trabaja el posicionamiento por detrás y por delante del pívot rival según la situación. Por delante para negar el pase; por detrás para anticipar el rebote. Usa el cuerpo para mantener la posición sin cometer falta.</string>
+    <string name="ej_pivot_rebdef_titulo">Rebote defensivo</string>
+    <string name="ej_pivot_rebdef_desc">Tras el tiro rival, bloquea al atacante con el cuerpo y salta a por el balón. Captura con dos manos y protégelo del rival al aterrizar.</string>
+    <string name="ej_pivot_zonapintada_titulo">Posicionamiento en zona pintada</string>
+    <string name="ej_pivot_zonapintada_desc">Trabaja el movimiento dentro de la zona para anticipar pases interiores. Mantén los brazos arriba, los pies activos y comunica con los compañeros para cubrir los espacios sin dejar huecos en la pintura.</string>
+
+    <!-- Vídeos fitness -->
+    <string name="vid_salto_titulo">Salto vertical — Entrenamiento completo</string>
+    <string name="vid_fuerza_titulo">Fuerza para baloncesto</string>
+    <string name="vid_resistencia_titulo">Resistencia y condición física</string>
+
+    <!-- Pantalla fitness -->
+    <string name="fitness_titulo">Entrenamiento físico</string>
+    <string name="fitness_categoria_fuerza">Fuerza</string>
+    <string name="fitness_categoria_salto">Salto</string>
+    <string name="fitness_categoria_resistencia">Resistencia</string>
+
+    <!-- Favoritos -->
+    <string name="favoritos_titulo">Mis favoritos</string>
+    <string name="favoritos_vacio">Aún no tienes ejercicios favoritos</string>
+    <string name="favoritos_añadir">Añadir a favoritos</string>
+    <string name="favoritos_eliminar">Eliminar de favoritos</string>
+
+    <!-- Realizado -->
+    <string name="marcar_realizado">Marcar como realizado</string>
+    <string name="realizado">✓ Realizado</string>
+
+    <!-- Cambiar rol -->
+    <string name="cambiar_rol">Cambiar rol</string>
+    <string name="cambiar_rol_confirmacion">¿Quieres cambiar tu posición en la cancha?</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cancelar">Cancelar</string>
+
+    <!-- Errores y estados -->
+    <string name="error_generico">Ha ocurrido un error. Inténtalo de nuevo.</string>
+    <string name="cargando">Cargando…</string>
+    <string name="lista_vacia">No hay contenido disponible</string>
+
+    <!-- Vídeos nuevos por rol -->
+    <string name="vid_base_avanzado_titulo">Ejercicios avanzados de base</string>
+    <string name="vid_escolta_ataque_titulo">Ejercicios de ataque al aro</string>
+    <string name="vid_escolta_avanzado_titulo">Ejercicios avanzados de shooting guard</string>
+    <string name="vid_alero_ofensivo_titulo">Ejercicios ofensivos small forward</string>
+    <string name="vid_alero_avanzado_titulo">Ejercicios avanzados de small forward</string>
+    <string name="vid_poste_simple_titulo">Ejercicios simples poste bajo</string>
+    <string name="vid_poste_avanzado_titulo">Ejercicios avanzados poste bajo</string>
+    <string name="vid_bote_titulo">Bote con ambas manos</string>
+    <string name="vid_tiro_titulo">Técnica de tiro</string>
+    <!-- Descripciones vídeos nuevos -->
+    <string name="vid_base_avanzado_desc">Sesión completa de entrenamiento avanzado para bases: manejo de balón en velocidad, cambios de dirección explosivos y toma de decisiones bajo presión defensiva.</string>
+    <string name="vid_escolta_ataque_desc">Ejercicios específicos para atacar el aro como escolta: penetraciones, finalizaciones con contacto y floaters desde ambos lados.</string>
+    <string name="vid_escolta_avanzado_desc">Entrenamiento avanzado para escoltas: movimientos de ataque combinados con bote, lectura de la defensa y finalizaciones variadas.</string>
+    <string name="vid_alero_ofensivo_desc">Ejercicios ofensivos diseñados para aleros: cortes al aro, tiro de media distancia, penetraciones y movimientos sin balón para desmarcarse.</string>
+    <string name="vid_alero_avanzado_desc">Entrenamiento avanzado para aleros: combinación de habilidades ofensivas y defensivas, lectura del juego y versatilidad en diferentes situaciones.</string>
+    <string name="vid_poste_simple_desc">Ejercicios básicos de poste bajo: posicionamiento, recepción del balón, giros simples y finalizaciones cerca del aro para jugadores interiores.</string>
+    <string name="vid_poste_avanzado_desc">Movimientos avanzados de poste bajo: encadenamiento de fintas, ganchos, drop steps y finalizaciones con contacto para jugadores interiores de alto nivel.</string>
+
 </resources>
