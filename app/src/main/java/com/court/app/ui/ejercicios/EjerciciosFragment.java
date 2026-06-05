@@ -57,7 +57,6 @@ public class EjerciciosFragment extends Fragment {
         });
         CompletadoViewModel completadoViewModel = new ViewModelProvider(this).get(CompletadoViewModel.class);
         adapter.setCompletadoViewModel(completadoViewModel, getViewLifecycleOwner());
-
         rvEjercicios.setLayoutManager(new LinearLayoutManager(requireContext()));
         rvEjercicios.setAdapter(adapter);
 

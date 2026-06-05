@@ -174,6 +174,10 @@
     <string name="favoritos_añadir">Añadir a favoritos</string>
     <string name="favoritos_eliminar">Eliminar de favoritos</string>
 
+    <!-- Realizado -->
+    <string name="marcar_realizado">Marcar como realizado</string>
+    <string name="realizado">✓ Realizado</string>
+
     <!-- Cambiar rol -->
     <string name="cambiar_rol">Cambiar rol</string>
     <string name="cambiar_rol_confirmacion">¿Quieres cambiar tu posición en la cancha?</string>

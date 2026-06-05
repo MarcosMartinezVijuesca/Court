@@ -51,6 +51,21 @@
                     android:layout_height="1dp"
                     android:layout_weight="1" />
 
+                <TextView
+                    android:id="@+id/tv_completado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/texto_claro"
+                    android:text="@string/marcar_realizado"
+                    android:background="@drawable/bg_badge_nivel"
+                    android:layout_marginEnd="8dp" />
+
                 <ImageButton
                     android:id="@+id/btn_favorito"
                     android:layout_width="40dp"

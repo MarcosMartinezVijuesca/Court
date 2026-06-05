@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.court.app.R;
+import com.court.app.viewmodel.CompletadoViewModel;
 import com.court.app.viewmodel.EjercicioViewModel;
 import com.court.app.viewmodel.FavoritoViewModel;
 import com.google.android.material.button.MaterialButton;
@@ -73,6 +74,32 @@ public class DetalleEjercicioFragment extends Fragment {
                 favoritoViewModel.eliminar(idEjercicio);
             } else {
                 favoritoViewModel.guardar(idEjercicio);
+            }
+        });
+
+        TextView tvCompletado = view.findViewById(R.id.tv_completado);
+        CompletadoViewModel completadoViewModel = new ViewModelProvider(this).get(CompletadoViewModel.class);
+
+        final boolean[] completadoActual = {false};
+
+        completadoViewModel.estaCompletado(idEjercicio).observe(getViewLifecycleOwner(), count -> {
+            completadoActual[0] = count != null && count > 0;
+            if (completadoActual[0]) {
+                tvCompletado.setText(getString(R.string.realizado));
+                tvCompletado.setBackgroundTintList(
+                        android.content.res.ColorStateList.valueOf(0xFF22C55E));
+            } else {
+                tvCompletado.setText(getString(R.string.marcar_realizado));
+                tvCompletado.setBackgroundTintList(
+                        android.content.res.ColorStateList.valueOf(0xFF4A5568));
+            }
+        });
+
+        tvCompletado.setOnClickListener(v -> {
+            if (completadoActual[0]) {
+                completadoViewModel.desmarcar(idEjercicio);
+            } else {
+                completadoViewModel.marcar(idEjercicio);
             }
         });
 

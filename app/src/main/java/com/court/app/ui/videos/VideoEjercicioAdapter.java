@@ -3,7 +3,6 @@ package com.court.app.ui.videos;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,15 +22,8 @@ public class VideoEjercicioAdapter extends RecyclerView.Adapter<VideoEjercicioAd
 
     private List<Ejercicio> ejercicios = new ArrayList<>();
     private final EjercicioAdapter.OnEjercicioClickListener listener;
-
     private CompletadoViewModel completadoViewModel;
     private androidx.lifecycle.LifecycleOwner lifecycleOwner;
-
-    public void setCompletadoViewModel(CompletadoViewModel viewModel,
-                                       androidx.lifecycle.LifecycleOwner owner) {
-        this.completadoViewModel = viewModel;
-        this.lifecycleOwner = owner;
-    }
 
     public VideoEjercicioAdapter(EjercicioAdapter.OnEjercicioClickListener listener) {
         this.listener = listener;
@@ -40,6 +32,12 @@ public class VideoEjercicioAdapter extends RecyclerView.Adapter<VideoEjercicioAd
     public void setEjercicios(List<Ejercicio> ejercicios) {
         this.ejercicios = ejercicios;
         notifyDataSetChanged();
+    }
+
+    public void setCompletadoViewModel(CompletadoViewModel viewModel,
+                                       androidx.lifecycle.LifecycleOwner owner) {
+        this.completadoViewModel = viewModel;
+        this.lifecycleOwner = owner;
     }
 
     @NonNull
@@ -71,23 +69,26 @@ public class VideoEjercicioAdapter extends RecyclerView.Adapter<VideoEjercicioAd
         holder.card.setOnClickListener(v -> listener.onEjercicioClick(ejercicio));
 
         if (completadoViewModel != null) {
-            final boolean[] completadoActual = {false};
-
             completadoViewModel.estaCompletado(ejercicio.getIdEjercicio())
                     .observe(lifecycleOwner, count -> {
-                        completadoActual[0] = count != null && count > 0;
-                        holder.btnCompletado.setImageResource(
-                                completadoActual[0] ? R.drawable.ic_check_lleno : R.drawable.ic_check_vacio
-                        );
-                    });
+                        boolean completado = count != null && count > 0;
+                        boolean isDarkTheme = (holder.itemView.getContext().getResources().getConfiguration().uiMode
+                                & android.content.res.Configuration.UI_MODE_NIGHT_MASK)
+                                == android.content.res.Configuration.UI_MODE_NIGHT_YES;
 
-            holder.btnCompletado.setOnClickListener(v -> {
-                if (completadoActual[0]) {
-                    completadoViewModel.desmarcar(ejercicio.getIdEjercicio());
-                } else {
-                    completadoViewModel.marcar(ejercicio.getIdEjercicio());
-                }
-            });
+                        holder.card.setCardBackgroundColor(
+                                completado
+                                        ? (isDarkTheme ? 0xFF1A4D2E : 0xFF86EFAC)
+                                        : android.graphics.Color.TRANSPARENT
+                        );
+
+                        int colorTexto = completado && !isDarkTheme
+                                ? 0xFF14532D
+                                : (isDarkTheme ? 0xFFFFFFFF : 0xFF0D1B4B);
+
+                        holder.tvTitulo.setTextColor(colorTexto);
+                        holder.tvDesc.setTextColor(colorTexto);
+                    });
         }
     }
 
@@ -99,7 +100,6 @@ public class VideoEjercicioAdapter extends RecyclerView.Adapter<VideoEjercicioAd
     static class ViewHolder extends RecyclerView.ViewHolder {
         MaterialCardView card;
         TextView tvTitulo, tvDesc, tvNivel, tvOrigen;
-        ImageButton btnCompletado;
         ViewHolder(@NonNull View itemView) {
             super(itemView);
             card     = itemView.findViewById(R.id.card_ejercicio);
@@ -107,7 +107,6 @@ public class VideoEjercicioAdapter extends RecyclerView.Adapter<VideoEjercicioAd
             tvDesc   = itemView.findViewById(R.id.tv_desc_ejercicio);
             tvNivel  = itemView.findViewById(R.id.tv_nivel);
             tvOrigen = itemView.findViewById(R.id.tv_origen);
-            btnCompletado = itemView.findViewById(R.id.btn_completado);
         }
     }
 }
