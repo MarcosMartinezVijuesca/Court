@@ -44,7 +44,6 @@ public class FavoritosFragment extends Fragment {
         });
         CompletadoViewModel completadoViewModel = new ViewModelProvider(this).get(CompletadoViewModel.class);
         adapter.setCompletadoViewModel(completadoViewModel, getViewLifecycleOwner());
-        adapter.setMostrarOrigen(true);
         rvFavoritos.setLayoutManager(new LinearLayoutManager(requireContext()));
         rvFavoritos.setAdapter(adapter);
 
