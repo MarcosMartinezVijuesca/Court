@@ -125,7 +125,12 @@ public class DetalleEjercicioFragment extends Fragment {
 
 
             // Por ahora mostramos el icono por defecto
-            ivImagen.setImageResource(R.drawable.ic_nav_ejercicios);
+            // Imagen según tipo
+            if (ejercicio.getYoutubeUrl() != null && !ejercicio.getYoutubeUrl().isEmpty()) {
+                ivImagen.setImageResource(R.drawable.court_videos);
+            } else {
+                ivImagen.setImageResource(R.drawable.court_drills);
+            }
 
             // Vídeo de YouTube
             if (ejercicio.getYoutubeUrl() != null && !ejercicio.getYoutubeUrl().isEmpty()) {

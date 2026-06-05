@@ -54,6 +54,7 @@ public class VideoEjercicioAdapter extends RecyclerView.Adapter<VideoEjercicioAd
 
         holder.tvTitulo.setText(ejercicio.getTitulo());
         holder.tvDesc.setText(ejercicio.getDescripcion());
+        holder.ivEjercicio.setImageResource(R.drawable.court_videos);
 
         String nivel = ejercicio.getNivel().equals("basico")
                 ? holder.itemView.getContext().getString(R.string.ejercicio_nivel_basico)
@@ -100,6 +101,7 @@ public class VideoEjercicioAdapter extends RecyclerView.Adapter<VideoEjercicioAd
     static class ViewHolder extends RecyclerView.ViewHolder {
         MaterialCardView card;
         TextView tvTitulo, tvDesc, tvNivel, tvOrigen;
+        ImageView ivEjercicio;
         ViewHolder(@NonNull View itemView) {
             super(itemView);
             card     = itemView.findViewById(R.id.card_ejercicio);
@@ -107,6 +109,7 @@ public class VideoEjercicioAdapter extends RecyclerView.Adapter<VideoEjercicioAd
             tvDesc   = itemView.findViewById(R.id.tv_desc_ejercicio);
             tvNivel  = itemView.findViewById(R.id.tv_nivel);
             tvOrigen = itemView.findViewById(R.id.tv_origen);
+            ivEjercicio = itemView.findViewById(R.id.iv_ejercicio);
         }
     }
 }

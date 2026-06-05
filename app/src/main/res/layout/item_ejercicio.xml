@@ -24,9 +24,10 @@
             android:layout_width="72dp"
             android:layout_height="72dp"
             android:scaleType="centerCrop"
-            android:background="@drawable/bg_rol_icono"
-            android:src="@drawable/ic_nav_ejercicios"
-            android:contentDescription="@string/ejercicios_titulo" />
+            android:src="@drawable/court_drills"
+            android:contentDescription="@string/ejercicios_titulo"
+            android:clipToOutline="true"
+            android:background="@drawable/bg_imagen_redondeada"/>
 
         <!-- Info -->
         <LinearLayout
@@ -86,7 +87,7 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:src="@drawable/ic_arrow_right"
-            android:alpha="0.4"
+            android:alpha="0.8"
             android:contentDescription="@null" />
 
     </LinearLayout>
