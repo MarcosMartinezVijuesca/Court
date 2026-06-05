@@ -20,7 +20,7 @@ public class VideoViewModel extends AndroidViewModel {
         repository = new VideoRepository(application);
     }
 
-    // Vídeos de técnica de un rol concreto
+
     public LiveData<List<Video>> obtenerPorRol(int idRol) {
         return repository.obtenerPorRol(idRol);
     }
