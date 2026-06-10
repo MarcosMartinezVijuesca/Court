@@ -21,11 +21,12 @@ public interface EjercicioDao {
     LiveData<List<Ejercicio>> obtenerPorRol(int idRol);
 
     // Solo ejercicios basicos de un rol
-    @Query("SELECT * FROM ejercicios WHERE idRol = :idRol AND nivel = 'basico'")
+    @Query("SELECT * FROM ejercicios WHERE idRol = :idRol AND nivel = 'basico' AND youtubeUrl IS NULL ORDER BY titulo ASC")
     LiveData<List<Ejercicio>> obtenerBasicosPorRol(int idRol);
 
     // Solo ejercicios avanzados de un rol
-    @Query("SELECT * FROM ejercicios WHERE idRol = :idRol AND nivel = 'avanzado'")
+    @Query("SELECT * FROM ejercicios WHERE idRol = :idRol AND nivel = 'avanzado' AND youtubeUrl IS NULL ORDER BY titulo ASC")
+
     LiveData<List<Ejercicio>> obtenerAvanzadosPorRol(int idRol);
 
     // Obtener un ejercicio por ID (pantalla de detalle)
